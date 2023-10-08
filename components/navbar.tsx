@@ -30,7 +30,7 @@ export default function Navbar() {
                 <div className='hidden sm:ml-10 sm:block'>
                   <div className='flex space-x-6'>
                     {navigation.map(item => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className={cn(
@@ -40,7 +40,7 @@ export default function Navbar() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>

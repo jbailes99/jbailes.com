@@ -1,9 +1,4 @@
-'use client'
-
-import React from 'react'
-import Layout from '../app/components/navLayout'
-
-export default function contact() {
+export default function Contact() {
   return (
     <div className='flex flex-col overflow-hidden w-full h-screen '>
       <h1>contact</h1>

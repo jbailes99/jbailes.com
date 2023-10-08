@@ -1,8 +1,3 @@
-'use client'
-
-import React from 'react'
-import Navbar from '../app/components/nav'
-
 export default function Projects() {
   return (
     <div className='flex flex-col overflow-hidden w-full h-screen '>
