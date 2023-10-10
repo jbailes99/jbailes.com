@@ -8,7 +8,7 @@ import cn from 'classnames'
 import { Fragment } from 'react'
 
 const navigation = [
-  { name: 'Home', href: '/home', current: true },
+  { name: 'Home', href: '/', current: true },
   { name: 'Projects', href: '/projects', current: false },
   { name: 'About', href: '/about', current: false },
   { name: 'Contact', href: '/contact', current: false },
