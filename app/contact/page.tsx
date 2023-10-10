@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { SocialIcon } from 'react-social-icons/component'
+import { SocialIcon } from 'react-social-icons'
 import 'react-social-icons/github'
 import 'react-social-icons/linkedin'
 import 'react-social-icons/email'
@@ -13,7 +13,9 @@ export default function Contact() {
         <div className='mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none'>
           <div className='justify-center items-center'>
             <div className='flex justify-center items-center'>
-              <h2 className='text-5xl font-bold tracking-tight text-gray-900'>Get in touch</h2>
+              <h2 className='text-5xl font-bold tracking-tight text-gray-900'>
+                Get in touch
+              </h2>
               {/* <p className='mt-4 leading-7 text-gray-600'>
                 Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac pellentesque.
               </p> */}
@@ -29,10 +31,18 @@ export default function Contact() {
                         url='www.github.com'
                         href='https://github.com/jbailes99'
                         target='_blank'
-                        style={{ width: '28px', height: '28px', marginRight: '10px' }}
+                        style={{
+                          width: '28px',
+                          height: '28px',
+                          marginRight: '10px',
+                        }}
                       />
 
-                      <a className='font-semibold text-indigo-600' href='https://github.com/jbailes99' target='_blank'>
+                      <a
+                        className='font-semibold text-indigo-600'
+                        href='https://github.com/jbailes99'
+                        target='_blank'
+                      >
                         jbailes99
                       </a>
                     </dd>
@@ -54,7 +64,11 @@ export default function Contact() {
                         url='www.linkedin.com'
                         href='https://www.linkedin.com/in/jbailes01/'
                         target='_blank'
-                        style={{ width: '28px', height: '28px', marginRight: '10px' }}
+                        style={{
+                          width: '28px',
+                          height: '28px',
+                          marginRight: '10px',
+                        }}
                       />
                       <a
                         className='font-semibold text-indigo-600'
@@ -72,7 +86,9 @@ export default function Contact() {
                 </dl>
               </div>
               <div className='rounded-2xl bg-white p-10 mt-20'>
-                <h3 className='text-3xl font-semibold leading-7 text-gray-900'>Say hello</h3>
+                <h3 className='text-3xl font-semibold leading-7 text-gray-900'>
+                  Say hello
+                </h3>
                 <dl className='mt-6 space-y-8 text-xl leading-6 text-gray-900'>
                   <div>
                     <dt className='sr-only'></dt>
@@ -81,9 +97,16 @@ export default function Contact() {
                         url='www.email.com'
                         href='https://github.com/jbailes99'
                         target='_blank'
-                        style={{ width: '30px', height: '30px', marginRight: '10px' }}
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                          marginRight: '10px',
+                        }}
                       />
-                      <a className='font-semibold text-indigo-600' href='mailto:contact@jbailes.com'>
+                      <a
+                        className='font-semibold text-indigo-600'
+                        href='mailto:contact@jbailes.com'
+                      >
                         contact@jbailes.com
                       </a>
                     </dd>
@@ -95,7 +118,11 @@ export default function Contact() {
                         url='www.whatsapp.com'
                         href='https://github.com/jbailes99'
                         target='_blank'
-                        style={{ width: '30px', height: '30px', marginRight: '10px' }}
+                        style={{
+                          width: '30px',
+                          height: '30px',
+                          marginRight: '10px',
+                        }}
                       />{' '}
                       +1 (781) 513-1582
                     </dd>
