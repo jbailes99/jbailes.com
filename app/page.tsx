@@ -88,7 +88,7 @@ export default function HomePage() {
     <div className='flex-1 overflow-auto flex flex-col justify-center items-center '>
       {/* <Image src='/me.png' alt='league ' width={128} height={128} className='mb-2 rounded-full overflow-hidden' /> */}
       <h1 className='text-7xl font-bold'>Jacob Bailes</h1>
-      <p className='text-med mt-4'>I like solving problems.</p>
+      <p className='text-med mt-4'>placeholder</p>
       <div className='flow-root'>
         <div className='text-center text-lg font-semibold mt-20 mb-2'>{/* <h1>Recent Milestones:</h1> */}</div>
         <ul role='list' className=''>

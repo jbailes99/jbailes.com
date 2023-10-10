@@ -8,9 +8,9 @@ export default function About() {
           <Image src='/me.png' alt='league ' width={128} height={128} className=' rounded-3xl overflow-hidden' />
         </div>
 
-        <p className='text-base font-semibold leading-7 text-indigo-600'>the best</p>
+        <p className='text-base font-semibold leading-7 text-indigo-600'>aaaa</p>
         <h2 className='mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>About me</h2>
-        <p className='mt-6 text-lg leading-8 text-gray-600'>yo momma</p>
+        <p className='mt-6 text-lg leading-8 text-gray-600'>aaaa</p>
       </div>
     </div>
   )
