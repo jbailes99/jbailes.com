@@ -1,6 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRightIcon, BookOpenIcon, CheckIcon, HandThumbUpIcon, UserIcon } from '@heroicons/react/20/solid'
+import {
+  ArrowRightIcon,
+  BookOpenIcon,
+  CheckIcon,
+  HandThumbUpIcon,
+  UserIcon,
+} from '@heroicons/react/20/solid'
 
 // import Navbar from '../components/nav'
 // import Home from '../pages/home'
@@ -90,13 +96,18 @@ export default function HomePage() {
       <h1 className='text-7xl font-bold'>Jacob Bailes</h1>
       <p className='text-med mt-4'>placeholder</p>
       <div className='flow-root'>
-        <div className='text-center text-lg font-semibold mt-20 mb-2'>{/* <h1>Recent Milestones:</h1> */}</div>
+        <div className='text-center text-lg font-semibold mt-20 mb-2'>
+          {/* <h1>Recent Milestones:</h1> */}
+        </div>
         <ul role='list' className=''>
           {timeline.map((event, eventIdx) => (
             <li key={event.id}>
               <div className='relative pb-8'>
                 {eventIdx !== timeline.length - 1 ? (
-                  <span className='absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200' aria-hidden='true' />
+                  <span
+                    className='absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200'
+                    aria-hidden='true'
+                  />
                 ) : null}
                 <div className='relative flex space-x-3'>
                   <div>
@@ -106,14 +117,20 @@ export default function HomePage() {
                         'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white'
                       )}
                     >
-                      <event.icon className='h-5 w-5 text-white' aria-hidden='true' />
+                      <event.icon
+                        className='h-5 w-5 text-white'
+                        aria-hidden='true'
+                      />
                     </span>
                   </div>
                   <div className='flex min-w-0 flex-1 justify-between space-x-4 pt-1.5'>
                     <div>
                       <p className='text-sm text-gray-500'>
                         {event.content}{' '}
-                        <a href={event.href} className='font-medium text-gray-900'>
+                        <a
+                          href={event.href}
+                          className='font-medium text-gray-900'
+                        >
                           {event.target}
                         </a>
                       </p>
