@@ -6,7 +6,7 @@ export default function Projects() {
           href='https://www.naashka.com'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-blue-500'
+          className='text-blue-500 hover:text-orange-400 '
         >
           www.naashka.com
         </a>
@@ -19,18 +19,18 @@ export default function Projects() {
     {
       name: (
         <a
-          href='https://www.naashka.com'
+          href='https://github.com/jbailes99?tab=repositories'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-blue-500'
+          className='text-blue-500 hover:text-orange-400 '
         >
-          www.naashka.com
+          More on github
         </a>
       ),
-      goal: 'Portfolio website',
+      goal: 'Small projects',
       // imageUrl:
       // '',
-      bio: ' I created a unique and nostalgic portfolio website that pays homage to the classic Windows 95 user interface. Inspired by the retro design elements of the 90s, the website is built using React95, a fantastic React UI library that mimics the look and feel of the iconic Windows 95 operating system.',
+      bio: 'Some of my first creations that include small Python games and applications that utilize APIs to provide statistics. Also a few web applications.',
     },
     // More people...
   ]
@@ -74,6 +74,19 @@ export default function Projects() {
             </li>
           ))}
         </ul>
+        <div className='relative'>
+          <div
+            className='absolute inset-4 mt-10 flex items-center'
+            aria-hidden='true'
+          >
+            <div className='w-full border-t border-gray-300' />
+          </div>
+        </div>
+        <div className='mt-32 text-base text-center '>
+          <p className='font-semibold text-2xl'>
+            More projects will be here soon.
+          </p>
+        </div>
       </div>
     </div>
   )

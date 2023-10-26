@@ -1,149 +1,134 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import {
-  ArrowRightIcon,
-  BookOpenIcon,
-  CheckIcon,
-  HandThumbUpIcon,
-  UserIcon,
-} from '@heroicons/react/20/solid'
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+} from '@heroicons/react/24/outline'
 
-// import Navbar from '../components/nav'
-// import Home from '../pages/home'
-// import Layout from './components/navLayout'
+const features = [
+  {
+    name: 'Education',
+    description:
+      'I have an Associates degree and Bachelors degree in Computer Science concentrating in Networking and Cloud Computing. I also have a minor in Mathematics. I plan to continue onwards to a Masters degree in Computer Science concentrating in Data Science and Machine Learning. ',
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: 'Experience',
+    description:
+      'Throughout my journey in education, I have learned a great deal about teamwork and working in a team setting. I have hands-on experience conducting exploratory data analysis using Python and R with in-depth case studies involving real-world datasets. This experience has equipped me with the skills to proficiently analyze data and leverage AI algorithms and methodologies to generate precise predictions and insights.',
+    icon: LockClosedIcon,
+  },
+  {
+    name: 'Portfolio',
+    description: (
+      <>
+        Head over to my{' '}
+        <a
+          href='/projects'
+          className='mt-2 text-base font-semibold leading-7 text-indigo-600 underline hover:text-orange-400 hover:cursor-pointer transition-transform transform scale-100 hover:scale-105'
+          color='blue'
+        >
+          projects
+        </a>{' '}
+        page to explore some of the projects I have tackled. These projects
+        encompass a wide range, from school assignments involving data analysis,
+        machine learning, to web development utilizing cloud services.
+        Additionally, you can also check out some of the projects I've
+        undertaken independently by visiting my portfolio . I'm continuously
+        seeking new projects to take on and new skills to acquire, so don't
+        hesitate to get in touch!
+      </>
+    ),
+    icon: ArrowPathIcon,
+  },
 
-const timeline = [
   {
-    id: 1,
-    content: 'Attended',
-    target: 'North Shore Community College',
-    href: '#',
-    date: 'Jan 2020',
-    datetime: '2021-01-20',
-    icon: BookOpenIcon,
-    iconBackground: 'bg-blue-400',
-  },
-  {
-    id: 2,
-    content: 'Completed Associates Degree in',
-    target: 'Arts/Computer Science',
-    href: '#',
-    date: 'Jan 2021',
-    datetime: '2021-01-20',
-    icon: CheckIcon,
-    iconBackground: 'bg-green-500',
-  },
-  {
-    id: 3,
-    content: 'Attended ',
-    target: 'University of Massachusetts Lowell',
-    href: '#',
-    date: 'Jan 2021',
-    datetime: '2021-01-20',
-    icon: BookOpenIcon,
-    iconBackground: 'bg-blue-400',
-  },
-  {
-    id: 4,
-    content: 'Transferred',
-    target: '',
-    href: '#',
-    date: '',
-    datetime: '2020-09-28',
-    icon: ArrowRightIcon,
-    iconBackground: 'bg-gray-500',
-  },
-  {
-    id: 5,
-    content: 'Attended',
-    target: 'Salem State University',
-    href: '#',
-    date: 'Jan 2023',
-    datetime: '2023-01-30',
-    icon: BookOpenIcon,
-    iconBackground: 'bg-blue-400',
-  },
-  {
-    id: 6,
-    content: 'Completed Bachelors Degree in',
-    target: 'Computer Science',
-    href: '#',
-    date: 'Dec 2023',
-    datetime: '2021-01-20',
-    icon: CheckIcon,
-    iconBackground: 'bg-green-500',
-  },
-  {
-    id: 7,
-    content: 'Applied to',
-    target: 'Front End Developer',
-    href: '#',
-    date: '2023',
-    datetime: '2020-09-20',
-    icon: UserIcon,
-    iconBackground: 'bg-gray-400',
+    name: 'Skills',
+    description: (
+      <>
+        Proficient in programming languages like Python, JavaScript, and Java.
+        Skilled in data analysis and visualization with tools such as Pandas,
+        NumPy, and Matplotlib. Skilled with front-end web development using
+        HTML, CSS, and popular frameworks like React. Knowledge of cloud
+        computing platforms, including AWS and Azure. Familiar with machine
+        learning libraries like TensorFlow and Scikit-Learn.
+      </>
+    ),
+    icon: FingerPrintIcon,
   },
 ]
 
-function classNames(...classes: any[]) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export default function HomePage() {
   return (
-    <div className='flex-1 overflow-auto flex flex-col justify-center items-center '>
-      {/* <Image src='/me.png' alt='league ' width={128} height={128} className='mb-2 rounded-full overflow-hidden' /> */}
-      <h1 className='text-7xl font-bold'>Jacob Bailes</h1>
-      <p className='text-med mt-4'>placeholder</p>
-      <div className='flow-root'>
-        <div className='text-center text-lg font-semibold mt-20 mb-2'>
-          {/* <h1>Recent Milestones:</h1> */}
-        </div>
-        <ul role='list' className=''>
-          {timeline.map((event, eventIdx) => (
-            <li key={event.id}>
-              <div className='relative pb-8'>
-                {eventIdx !== timeline.length - 1 ? (
-                  <span
-                    className='absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200'
-                    aria-hidden='true'
-                  />
-                ) : null}
-                <div className='relative flex space-x-3'>
-                  <div>
-                    <span
-                      className={classNames(
-                        event.iconBackground,
-                        'h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white'
-                      )}
-                    >
-                      <event.icon
-                        className='h-5 w-5 text-white'
+    <div className='flex-1 overflow-auto flex flex-col mt-0 items-center '>
+      <h1 className='mt-12 text-8xl font-bold text-gray-900 transition-transform transform scale-100 hover:scale-105'>
+        Jacob Bailes
+      </h1>
+      {/* <p className='text-med mt-4'>Learn more about me!</p> */}
+
+      <div className='bg-white py-24 sm:py-12'>
+        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+          <div className='mx-auto max-w-2xl lg:text-center'>
+            <h2 className='text-base font-semibold leading-7 text-indigo-600'>
+              Let's get to know each other.
+            </h2>
+
+            <div className='relative'>
+              <div
+                className='absolute inset-2 flex items-center'
+                aria-hidden='true'
+              >
+                <div className='w-full border-t border-gray-700' />
+              </div>
+            </div>
+
+            <p className='mt-2 text-3xl font-bold mt-10 tracking-tight text-gray-900 sm:text-4xl'>
+              The Basics
+            </p>
+            {/* <p className='mt-6 text-lg leading-8 text-gray-600'>
+              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+              Suspendisse eget egestas a elementum pulvinar et feugiat blandit
+              at. In mi viverra elit nunc.
+            </p> */}
+          </div>
+
+          {/* <div className='relative'>
+            <div
+              className='absolute inset-6 flex items-center'
+              aria-hidden='true'
+            >
+              <div className='w-full border-t border-gray-600' />
+            </div>
+          </div> */}
+
+          <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-18 lg:max-w-5xl'>
+            <dl className='grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16'>
+              {features.map((feature) => (
+                <div
+                  key={feature.name}
+                  className='relative pl-16 flex flex-col items-center'
+                >
+                  <div className='flex items-center mb-2'>
+                    <div className='rounded-lg bg-indigo-600 h-8 w-8 flex items-center justify-center'>
+                      <feature.icon
+                        className='h-6 w-6 text-white'
                         aria-hidden='true'
                       />
-                    </span>
-                  </div>
-                  <div className='flex min-w-0 flex-1 justify-between space-x-4 pt-1.5'>
-                    <div>
-                      <p className='text-sm text-gray-500'>
-                        {event.content}{' '}
-                        <a
-                          href={event.href}
-                          className='font-medium text-gray-900'
-                        >
-                          {event.target}
-                        </a>
-                      </p>
                     </div>
-                    <div className='whitespace-nowrap text-right text-sm text-gray-500'>
-                      <time dateTime={event.datetime}>{event.date}</time>
-                    </div>
+                    <dt className='text-base font-semibold ml-2 leading-7 text-gray-900'>
+                      {feature.name}
+                    </dt>
                   </div>
+                  <dd className='mt-2 text-center leading-7 text-gray-600'>
+                    {feature.description}
+                  </dd>
                 </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+              ))}
+            </dl>
+          </div>
+        </div>
       </div>
     </div>
   )

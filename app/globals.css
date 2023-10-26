@@ -6,6 +6,60 @@ body {
   @apply flex flex-col h-screen w-screen overflow-hidden;
 }
 
+.image-preview {
+  position: absolute;
+  opacity: 0.3;
+  transform: translateX(20px);
+  z-index: -1;
+  margin-top: -466px;
+  margin-left: 16px; /* Set a lower z-index to position the preview image underneath */
+}
+
+/* Define the shadow style */
+.with-shadow {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Customize the shadow as needed */
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Add a hover effect to the shadow */
+.with-shadow:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Customize the shadow on hover */
+}
+
+/* 
+.slider-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-navigation button {
+  background-color: #007acc; /* Change to your preferred color */
+  /* color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+} */ 
+
+.navigation-circles {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.navigation-circles span {
+  width: 12px;
+  height: 12px;
+  background-color: #007acc; /* Change to your preferred color */
+  border-radius: 50%;
+  margin: 5px 8px; /* Adjust the margin as needed */
+  cursor: pointer;
+}
+
+.navigation-circles .active {
+  background-color: #3f3d3c; /* Change to a different color for active circle */
+}
+
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
