@@ -35,9 +35,9 @@ const features = [
         page to explore some of the projects I have tackled. These projects
         encompass a wide range, from school assignments involving data analysis,
         machine learning, to web development utilizing cloud services.
-        Additionally, you can also check out some of the projects I've
-        undertaken independently by visiting my portfolio . I'm continuously
-        seeking new projects to take on and new skills to acquire, so don't
+        Additionally, you can also check out some of the projects I have
+        undertaken independently by visiting my portfolio . I am continuously
+        seeking new projects to take on and new skills to acquire, so do not
         hesitate to get in touch!
       </>
     ),
@@ -72,7 +72,7 @@ export default function HomePage() {
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl lg:text-center'>
             <h2 className='text-base font-semibold leading-7 text-indigo-600'>
-              Let's get to know each other.
+              Letss get to know each other.
             </h2>
 
             <div className='relative'>

@@ -143,7 +143,7 @@ export default function About() {
         <div className='mx-auto max-w-2xl'>
           <h2 className='text-2xl font-bold text-indigo-700 mb-5'>About Me</h2>
           <p className='text-left text-lg leading-7 text-gray-600 mb-4'>
-            I'm on a journey to harness the power of technology to connect
+            I am on a journey to harness the power of technology to connect
             people, systems, and ideas. My academic journey has equipped me with
             a strong foundation in Computer Science, and my concentration in
             Networking and Cloud Computing has allowed me to delve deep into the
@@ -151,20 +151,20 @@ export default function About() {
             infrastructures.
           </p>
           <p className='text-left text-lg leading-7 text-gray-600 mb-4'>
-            I'm fascinated by the limitless potential of cloud technology and
+            I am fascinated by the limitless potential of cloud technology and
             its role in shaping the future of data storage and accessibility.
             One of my areas of expertise is in the world of data analysis and
             Artificial Intelligence.
           </p>
           <p className='text-left text-lg leading-7 text-gray-600 mb-4'>
-            I've had the privilege of working on projects that involve
+            I have had the privilege of working on projects that involve
             Exploratory Data Analysis, where I unearth valuable insights from
             data, and AI, where I create intelligent solutions to complex
             problems.
           </p>
           <p className='text-left text-lg leading-7 text-gray-600 mb-4'>
-            But my interests and skills aren't confined to the digital realm.
-            I'm also an enthusiast of web design, and I've enjoyed crafting
+            But my interests and skills are not confined to the digital realm. I
+            am also an enthusiast of web design, and I have enjoyed crafting
             portfolios for both myself and friends, exploring the balance of
             form and function to create captivating and user-friendly websites.
           </p>
@@ -172,19 +172,19 @@ export default function About() {
             Beyond the world of coding and data, I have a deep curiosity for
             electronics and the world of IoT. My adventures in this space have
             led me to explore the exciting realm of ESP32 development and the
-            creative possibilities of 3D printing projects. I'm always eager to
+            creative possibilities of 3D printing projects. I am always eager to
             learn, experiment, and bring new ideas to life.
           </p>
           <p className='text-left text-lg leading-7 text-gray-600 mb-4'>
             In this ever-evolving field, I believe in the importance of
-            adaptability and continuous learning. I'm excited about the future
-            and the role I can play in shaping it. Whether it's crafting elegant
-            code, designing beautiful websites, or venturing into the world of
-            IoT, I'm driven by a sense of purpose and the belief that technology
-            can truly make the world a better place.
+            adaptability and continuous learning. I am excited about the future
+            and the role I can play in shaping it. Whether it is crafting
+            elegant code, designing beautiful websites, or venturing into the
+            world of IoT, I am driven by a sense of purpose and the belief that
+            technology can truly make the world a better place.
           </p>
           <p className='text-left text-lg leading-7 text-gray-600 mb-4'>
-            Let's connect and explore the endless possibilities that technology
+            Lets connect and explore the endless possibilities that technology
             offers us!
           </p>
           <div className='relative'>
