@@ -5,6 +5,10 @@ import {
   CloudArrowUpIcon,
   FingerPrintIcon,
   LockClosedIcon,
+  AcademicCapIcon,
+  PaperAirplaneIcon,
+  FolderOpenIcon,
+  CodeBracketSquareIcon,
 } from '@heroicons/react/24/outline'
 
 const features = [
@@ -12,13 +16,13 @@ const features = [
     name: 'Education',
     description:
       'I have an Associates degree and Bachelors degree in Computer Science concentrating in Networking and Cloud Computing. I also have a minor in Mathematics. I plan to continue onwards to a Masters degree in Computer Science concentrating in Data Science and Machine Learning. ',
-    icon: CloudArrowUpIcon,
+    icon: AcademicCapIcon,
   },
   {
     name: 'Experience',
     description:
       'Throughout my journey in education, I have learned a great deal about teamwork and working in a team setting. I have hands-on experience conducting exploratory data analysis using Python and R with in-depth case studies involving real-world datasets. This experience has equipped me with the skills to proficiently analyze data and leverage AI algorithms and methodologies to generate precise predictions and insights.',
-    icon: LockClosedIcon,
+    icon: PaperAirplaneIcon,
   },
   {
     name: 'Portfolio',
@@ -41,7 +45,7 @@ const features = [
         hesitate to get in touch!
       </>
     ),
-    icon: ArrowPathIcon,
+    icon: FolderOpenIcon,
   },
 
   {
@@ -56,7 +60,7 @@ const features = [
         learning libraries like TensorFlow and Scikit-Learn.
       </>
     ),
-    icon: FingerPrintIcon,
+    icon: CodeBracketSquareIcon,
   },
 ]
 
@@ -71,7 +75,7 @@ export default function HomePage() {
       <div className='bg-white py-24 sm:py-12'>
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl lg:text-center'>
-            <h2 className='text-base font-semibold leading-7 text-indigo-600'>
+            <h2 className='text-center font-semibold leading-7 text-indigo-600'>
               Lets get to know each other.
             </h2>
 
@@ -84,7 +88,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <p className='mt-6 text-3xl font-bold mt-10 tracking-tight text-gray-900 sm:text-4xl'>
+            <p className='mt-6 text-center text-3xl font-bold mt-10 tracking-tight text-gray-900 sm:text-4xl'>
               The Basics
             </p>
             {/* <p className='mt-6 text-lg leading-8 text-gray-600'>
@@ -108,7 +112,7 @@ export default function HomePage() {
               {features.map((feature) => (
                 <div
                   key={feature.name}
-                  className='relative pl-16 flex flex-col items-center'
+                  className='relative pl-5 pr-5 flex flex-col items-center'
                 >
                   <div className='flex items-center mb-2'>
                     <div className='rounded-lg bg-indigo-600 h-8 w-8 flex items-center justify-center'>

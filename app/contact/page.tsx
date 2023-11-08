@@ -11,8 +11,8 @@ export default function Contact() {
     <div className='flex-1  justify-center p-8 overflow-hidden'>
       <div className='bg-white py-12 sm:py-12'>
         <div className='mx-auto max-w-7xl sm:px-6 lg:px-8'>
-          <div className='relative isolate overflow-hidden bg-gray-800 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-24'>
-            <h2 className='mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl'>
+          <div className='relative isolate overflow-hidden bg-gray-200 px-6 py-24 shadow-lg sm:rounded-2xl sm:px-24 xl:py-24'>
+            <h2 className='mx-auto text-gray-600 max-w-2xl text-center text-3xl font-bold tracking-tight  sm:text-4xl'>
               Lets keep in touch.
             </h2>
             <div className='text-center'>
@@ -86,12 +86,12 @@ export default function Contact() {
                   className='absolute inset-4 mt-12 flex items-center'
                   aria-hidden='true'
                 >
-                  <div className='w-full border-t border-gray-300' />
+                  <div className='w-full border-t border-gray-400' />
                 </div>
               </div>
 
               <div className='rounded-2xl p-0 mt-0'>
-                <h3 className='text-3xl mt-20 font-semibold leading-7 text-white sm:text-4xl'>
+                <h3 className='text-3xl mt-20 font-semibold leading-7 text-gray-600 sm:text-4xl'>
                   Say hello.
                 </h3>
                 <dl className='mt-6 space-y-8 text-xl leading-6 text-gray-900'>
@@ -137,7 +137,7 @@ export default function Contact() {
             </div>
             <svg
               viewBox='0 0 1024 1024'
-              className='absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2'
+              className='absolute left-1/2 top-1/4 -z-10 h-[100rem] w-[100rem] -translate-x-1/2'
               aria-hidden='true'
             >
               <circle
@@ -145,7 +145,7 @@ export default function Contact() {
                 cy={512}
                 r={512}
                 fill='url(#759c1415-0410-454c-8f7c-9a820de03641)'
-                fillOpacity='0.7'
+                fillOpacity='0.3'
               />
               <defs>
                 <radialGradient
@@ -156,8 +156,8 @@ export default function Contact() {
                   gradientUnits='userSpaceOnUse'
                   gradientTransform='translate(512 512) rotate(90) scale(512)'
                 >
-                  <stop stopColor='white' />
-                  <stop offset={1} stopColor='w' stopOpacity={0} />
+                  <stop stopColor='grey' />
+                  <stop offset={1} stopColor='blue' stopOpacity={0} />
                 </radialGradient>
               </defs>
             </svg>

@@ -12,7 +12,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 
 export default function About() {
-  const images = ['/about2.jpg', '/about1.jpg', '/about3.jpg'] // Add image paths
+  const images = ['/about2.jpg'] // Add image paths
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const nextImage = () => {
@@ -133,6 +133,32 @@ export default function About() {
               ></span>
             ))}
           </div>
+          <div className='relative'>
+            <div
+              className='absolute inset-4 mt-2 flex items-center'
+              aria-hidden='true'
+            >
+              <div className='w-full border-t border-gray-300' />
+            </div>
+          </div>
+          <div className='text-center  text-lg font-semibold pt-10'>
+            Want to know more?
+          </div>
+          <div className='mt-6 mb-10 items-center space-x-8'>
+            <a
+              href='Resume.pdf'
+              download
+              className='mt-2 text-base font-semibold leading-7 underline text-indigo-600  hover:text-orange-400 hover:cursor-pointer'
+            >
+              My resume
+            </a>
+            <Link
+              href='/contact'
+              className='mt-2 text-base font-semibold leading-7 underline text-indigo-600 hover:text-orange-400 hover:cursor-pointer'
+            >
+              Contact me
+            </Link>
+          </div>
         </div>
         <div className='flex items-center justify-center h-[128px]'>
           <h2 className='text-4xl font-bold tracking-tight text-gray-900'>
@@ -188,32 +214,7 @@ export default function About() {
             Lets connect and explore the endless possibilities that technology
             offers us.
           </p>
-          <div className='relative'>
-            <div
-              className='absolute inset-4 mt-2 flex items-center'
-              aria-hidden='true'
-            >
-              <div className='w-full border-t border-gray-300' />
-            </div>
-          </div>
-          <div className='text-center text-lg font-semibold pt-10'>
-            Want to know more?
-          </div>
-          <div className='mt-14 items-center space-x-48'>
-            <a
-              href='Resume.pdf'
-              download
-              className='mt-2 text-base font-semibold leading-7 text-indigo-600  hover:text-orange-400 hover:cursor-pointer'
-            >
-              Download my resume
-            </a>
-            <Link
-              href='/contact'
-              className='mt-2 text-base font-semibold leading-7 text-indigo-600 hover:text-orange-400 hover:cursor-pointer'
-            >
-              Contact me
-            </Link>
-          </div>
+
           {/* <div className='relative'>
             <div
               className='absolute inset-4 mt-2 flex items-center'
@@ -223,8 +224,8 @@ export default function About() {
             </div>
           </div> */}
         </div>
-        <div className='flex-root mx-auto max-w-4xl mt-20 mb-4'>
-          <div className='text-center text-3xl font-semibold mb-14'>
+        <div className='flex-root mx-auto max-w-4xl mt-10 mb-4'>
+          <div className='text-center text-indigo-700 text-3xl font-semibold mb-14'>
             <h1>Recent Milestones</h1>
             <div className='relative'>
               <div
