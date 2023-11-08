@@ -11,7 +11,7 @@ export default function Contact() {
     <div className='flex-1  justify-center p-8 overflow-auto'>
       <div className='bg-white py-12 sm:py-12'>
         <div className='mx-auto max-w-7xl sm:px-6 lg:px-8'>
-          <div className='relative isolate overflow-hidden bg-gray-200 px-6 py-24 shadow-lg sm:rounded-2xl sm:px-24 xl:py-24'>
+          <div className='relative isolate overflow-hidden bg-gray-200 px-6 py-24 shadow-lg rounded-2xl sm:px-24 xl:py-24'>
             <h2 className='mx-auto text-gray-900 max-w-2xl text-center text-3xl font-bold tracking-tight  sm:text-4xl'>
               Lets keep in touch.
             </h2>

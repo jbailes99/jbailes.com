@@ -67,12 +67,12 @@ const features = [
 export default function HomePage() {
   return (
     <div className='flex-1 overflow-auto flex flex-col mt-0 items-center '>
-      <h1 className='mt-12 text-8xl text-center font-bold text-gray-900 transition-transform transform scale-100 hover:scale-105'>
+      <h1 className='mt-12 sm:text-8xl text-6xl text-center font-bold text-gray-900 transition-transform transform scale-100 hover:scale-105'>
         Jacob Bailes
       </h1>
       {/* <p className='text-med mt-4'>Learn more about me!</p> */}
 
-      <div className='bg-white py-24 sm:py-12'>
+      <div className='bg-white py-6 sm:py-12'>
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl lg:text-center'>
             <h2 className='text-center font-semibold leading-7 text-indigo-600'>
@@ -88,7 +88,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <p className='mt-6 text-center text-3xl font-bold mt-10 tracking-tight text-gray-900 sm:text-4xl'>
+            <p className='mt-6 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
               The Basics
             </p>
             {/* <p className='mt-6 text-lg leading-8 text-gray-600'>
