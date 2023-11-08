@@ -59,7 +59,7 @@ export default function Navbar() {
                 </div>
               </div>
               <div className='flex items-center justify-center sm:items-stretch sm:justify-start'>
-                <div className='hidden sm:ml-10 sm:block'>
+                <div className='sm:ml-10 sm:block'>
                   <div className='flex space-x-6'>
                     {navigationItems.map((item) => (
                       <Link
