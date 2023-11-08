@@ -105,7 +105,7 @@ export default function About() {
   return (
     <div className='flex-1 justify-center p-10'>
       <div className='relative mx-auto max-w-8xl  text-center'>
-        <div className='absolute top-20 ml-32'>
+        <div className='lg:absolute top-20 ml-32 sm:relative'>
           <Image
             src={images[currentImageIndex]}
             alt={`Image ${currentImageIndex + 1}`}

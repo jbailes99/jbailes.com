@@ -67,7 +67,7 @@ const features = [
 export default function HomePage() {
   return (
     <div className='flex-1 overflow-auto flex flex-col mt-0 items-center '>
-      <h1 className='mt-12 text-8xl font-bold text-gray-900 transition-transform transform scale-100 hover:scale-105'>
+      <h1 className='mt-12 text-8xl text-center font-bold text-gray-900 transition-transform transform scale-100 hover:scale-105'>
         Jacob Bailes
       </h1>
       {/* <p className='text-med mt-4'>Learn more about me!</p> */}

@@ -8,11 +8,11 @@ import 'react-social-icons/whatsapp'
 
 export default function Contact() {
   return (
-    <div className='flex-1  justify-center p-8 overflow-hidden'>
+    <div className='flex-1  justify-center p-8 overflow-auto'>
       <div className='bg-white py-12 sm:py-12'>
         <div className='mx-auto max-w-7xl sm:px-6 lg:px-8'>
           <div className='relative isolate overflow-hidden bg-gray-200 px-6 py-24 shadow-lg sm:rounded-2xl sm:px-24 xl:py-24'>
-            <h2 className='mx-auto text-gray-600 max-w-2xl text-center text-3xl font-bold tracking-tight  sm:text-4xl'>
+            <h2 className='mx-auto text-gray-900 max-w-2xl text-center text-3xl font-bold tracking-tight  sm:text-4xl'>
               Lets keep in touch.
             </h2>
             <div className='text-center'>
@@ -91,7 +91,7 @@ export default function Contact() {
               </div>
 
               <div className='rounded-2xl p-0 mt-0'>
-                <h3 className='text-3xl mt-20 font-semibold leading-7 text-gray-600 sm:text-4xl'>
+                <h3 className='text-3xl mt-20 font-semibold leading-7 text-gray-900 sm:text-4xl'>
                   Say hello.
                 </h3>
                 <dl className='mt-6 space-y-8 text-xl leading-6 text-gray-900'>

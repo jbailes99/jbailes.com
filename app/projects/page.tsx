@@ -22,7 +22,7 @@ export default function Projects() {
           href='https://github.com/jbailes99?tab=repositories'
           target='_blank'
           rel='noopener noreferrer'
-          className='text-blue-500 hover:text-orange-400 '
+          className='text-blue-500 hover:text-orange-400  '
         >
           More on github
         </a>
@@ -39,10 +39,10 @@ export default function Projects() {
     <div className='flex-1 overflow-auto flex-col justify-center items-center h-full p-8'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl sm:text-center'>
-          <h2 className='text-4xl font-bold tracking-tight text-gray-900'>
+          <h2 className='text-4xl text-center font-bold tracking-tight text-gray-900'>
             Projects
           </h2>
-          <p className=' text-lg leading-8 text-gray-600'>
+          <p className=' text-lg text-center leading-8 text-gray-600'>
             Take a look at some of my projects.
           </p>
         </div>
