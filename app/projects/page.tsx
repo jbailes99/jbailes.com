@@ -8,13 +8,45 @@ export default function Projects() {
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400 '
         >
-          www.naashka.com
+          naashka.com
         </a>
       ),
-      goal: 'Portfolio website',
+      goal: 'Portfolio Website',
       // imageUrl:
       // '',
       bio: ' I created a unique and nostalgic portfolio website that pays homage to the classic Windows 95 user interface. Inspired by the retro design elements of the 90s, the website is built using React95, a fantastic React UI library that mimics the look and feel of the iconic Windows 95 operating system.',
+    },
+    {
+      name: (
+        <a
+          href='https://bodymetrics.org'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-blue-500 hover:text-orange-400  '
+        >
+          bodymetrics.org
+        </a>
+      ),
+      goal: 'Web Application',
+      // imageUrl:
+      // '',
+      bio: 'I created a web application that allows users to track their body metrics and visualize their progress. The application is built using React and utilizes AWS DynamoDB database to store user data. The application is hosted on AWS and utilizes AWS Lambda functions to handle API requests. The application also utilizes AWS Cognito to handle user authentication and authorization. The application is currently in development and will be available soon.',
+    },
+    {
+      name: (
+        <a
+          href='https://github.com/MBTA-App/mbtaTransitApp'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-blue-500 hover:text-orange-400  '
+        >
+          MBTAXpress
+        </a>
+      ),
+      goal: 'Web Application',
+      // imageUrl:
+      // '',
+      bio: 'I created a web application that allows users to experience live-tracking of all MBTA public vehicles. The application utilizes the robust MBTA API allowing users access to information about service alerts and stations and stops. Users can see detailed information about stations and post on specific stations with feedback. The application is currently in development and will be available soon.',
     },
     {
       name: (
@@ -27,7 +59,7 @@ export default function Projects() {
           More on github
         </a>
       ),
-      goal: 'Small projects',
+      goal: 'Small Projects',
       // imageUrl:
       // '',
       bio: 'Some of my first creations that include small Python games and applications that utilize APIs to provide statistics. Also a few web applications.',

@@ -15,13 +15,13 @@ const features = [
   {
     name: 'Education',
     description:
-      'I have an Associates degree and Bachelors degree in Computer Science concentrating in Networking and Cloud Computing. I also have a minor in Mathematics. I plan to continue onwards to a Masters degree in Computer Science concentrating in Data Science and Machine Learning. ',
+      'Throughout my journey in education, I have learned a great deal about teamwork and collaboration. I have a Bachelors degree in Computer Science concentrating in Networking and Cloud Computing with a minor in Mathematics from Salem State University. I have been nominated for different awards throughout my schooling and have been the recipient of the Math Achievement Award. I enjoy learning, teaching, and listening - all aspects of education.',
     icon: AcademicCapIcon,
   },
   {
     name: 'Experience',
     description:
-      'Throughout my journey in education, I have learned a great deal about teamwork and working in a team setting. I have hands-on experience conducting exploratory data analysis using Python and R with in-depth case studies involving real-world datasets. This experience has equipped me with the skills to proficiently analyze data and leverage AI algorithms and methodologies to generate precise predictions and insights.',
+      'I have hands-on experience conducting exploratory data analysis using Python and R with in-depth case studies involving real-world datasets. I have also gained experience with machine learning and deep learning techniques, including regression, classification, clustering, and neural networks. I have experience with front-end web development using HTML, CSS, and JavaScript, as well as popular frameworks like React or Next. Im familiar with full stack appliations utilizing MERN Stack. I have experience with hosting and deploying systems on cloud services like AWS.',
     icon: PaperAirplaneIcon,
   },
   {

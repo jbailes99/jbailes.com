@@ -24,10 +24,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={roboto.className}>
         <Navbar />
-        <div className="flex flex-1 overflow-auto">{children}</div>
+        <div className='flex flex-1 overflow-auto'>{children}</div>
       </body>
     </html>
   )
