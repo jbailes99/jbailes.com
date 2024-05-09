@@ -27,7 +27,7 @@ export default function Projects() {
           fitxpress.app
         </a>
       ),
-      goal: 'Web Application',
+      goal: 'Full-Stack Web Application',
       // imageUrl:
       // '',
       bio: 'I created a web application that allows users to track their body metrics and visualize their progress. The application is built using React and utilizes AWS DynamoDB database to store user data. The application is hosted on AWS and utilizes AWS Lambda functions to handle API requests. The application also utilizes AWS Cognito to handle user authentication and authorization. The application is currently in development and will be available soon.',
@@ -43,7 +43,7 @@ export default function Projects() {
           MBTAXpress
         </a>
       ),
-      goal: 'Web Application',
+      goal: 'Full-Stack Web Application',
       // imageUrl:
       // '',
       bio: 'I created a web application that allows users to experience live-tracking of all MBTA public vehicles. The application utilizes the robust MBTA API allowing users access to information about service alerts and stations and stops. Users can see detailed information about stations and post on specific stations with feedback. The application is currently in development and will be available soon.',

@@ -113,7 +113,7 @@ export default function About() {
   }
 
   return (
-    <div className='flex-1 justify-center p-2 lg:p-12'>
+    <div className='flex-1 justify-center'>
       <div className='flex items-center justify-center h-[128px]'>
         <h2 className='text-4xl font-bold tracking-tight text-gray-900'>
           Nice to meet you.
