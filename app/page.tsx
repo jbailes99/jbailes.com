@@ -21,7 +21,7 @@ const features = [
   {
     name: 'Experience',
     description:
-      'I have hands-on experience conducting exploratory data analysis using Python and R with in-depth case studies involving real-world datasets. I have also gained experience with machine learning and deep learning techniques, including regression, classification, clustering, and neural networks. I have experience with front-end web development using HTML, CSS, and JavaScript, as well as popular frameworks like React or Next. Im familiar with full stack appliations utilizing MERN Stack. I have experience with hosting and deploying systems on cloud services like AWS.',
+      'I have hands-on experience conducting exploratory data analysis using Python and R with in-depth case studies involving real-world datasets. I have also gained experience with machine learning and deep learning techniques, including regression, classification, clustering, and neural networks. I have experience with front-end web development using HTML, CSS, and JavaScript, as well as popular frameworks like React or Next. Im familiar with full stack appliations utilizing MERN Stack. I also have experience with hosting and deploying systems on cloud services like AWS.',
     icon: PaperAirplaneIcon,
   },
   {

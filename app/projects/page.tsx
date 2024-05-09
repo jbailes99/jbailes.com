@@ -19,12 +19,12 @@ export default function Projects() {
     {
       name: (
         <a
-          href='https://bodymetrics.org'
+          href='https://fitxpress.app'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400  '
         >
-          bodymetrics.org
+          fitxpress.app
         </a>
       ),
       goal: 'Web Application',
@@ -35,7 +35,7 @@ export default function Projects() {
     {
       name: (
         <a
-          href='https://github.com/MBTA-App/mbtaTransitApp'
+          href='https://main.d356nzcx62zjtr.amplifyapp.com/'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400  '
@@ -56,13 +56,13 @@ export default function Projects() {
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400  '
         >
-          More on github
+          GitHub
         </a>
       ),
       goal: 'Small Projects',
       // imageUrl:
       // '',
-      bio: 'Some of my first creations that include small Python games and applications that utilize APIs to provide statistics. Also a few web applications.',
+      bio: 'Some of my first creations including small games, fun projects, and more!',
     },
     // More people...
   ]
