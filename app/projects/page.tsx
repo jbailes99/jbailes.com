@@ -12,6 +12,7 @@ export default function Projects() {
         </a>
       ),
       goal: 'Portfolio Website',
+      status: 'Completed',
       // imageUrl:
       // '',
       bio: ' I created a unique and nostalgic portfolio website that pays homage to the classic Windows 95 user interface. Inspired by the retro design elements of the 90s, the website is built using React95, a fantastic React UI library that mimics the look and feel of the iconic Windows 95 operating system.',
@@ -28,6 +29,7 @@ export default function Projects() {
         </a>
       ),
       goal: 'Full-Stack Web Application',
+      status: 'In Development',
       // imageUrl:
       // '',
       bio: 'I created a web application that allows users to track their body metrics and visualize their progress. The application is built using React and utilizes AWS DynamoDB database to store user data. The application is hosted on AWS and utilizes AWS Lambda functions to handle API requests. The application also utilizes AWS Cognito to handle user authentication and authorization. The application is currently in development and will be available soon.',
@@ -44,6 +46,7 @@ export default function Projects() {
         </a>
       ),
       goal: 'Full-Stack Web Application',
+      status: 'On-going maintenance and updates',
       // imageUrl:
       // '',
       bio: 'I created a web application that allows users to experience live-tracking of all MBTA public vehicles. The application utilizes the robust MBTA API allowing users access to information about service alerts and stations and stops. Users can see detailed information about stations and post on specific stations with feedback. The application is currently in development and will be available soon.',
@@ -98,6 +101,17 @@ export default function Projects() {
                 </h3>
                 <p className='text-base text-center leading-7 text-gray-800'>
                   {project.goal}
+                </p>
+                <p
+                  className={`text-md text-center font-bold leading-7 ${
+                    project.status === 'Completed'
+                      ? 'text-green-600'
+                      : project.status === 'In Progress'
+                      ? 'text-yellow-500'
+                      : 'text-gray-800'
+                  }`}
+                >
+                  {project.status}
                 </p>
                 <p className='mt-6 text-base text-center leading-7 text-gray-800'>
                   {project.bio}

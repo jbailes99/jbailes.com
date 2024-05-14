@@ -15,13 +15,13 @@ const features = [
   {
     name: 'Education',
     description:
-      'Throughout my journey in education, I have learned a great deal about teamwork and collaboration. I have a Bachelors degree in Computer Science concentrating in Networking and Cloud Computing with a minor in Mathematics from Salem State University. I have been nominated for different awards throughout my schooling and have been the recipient of the Math Achievement Award. I enjoy learning, teaching, and listening - all aspects of education.',
+      'Throughout my journey in education, I have learned a great deal about teamwork and collaboration, especially in the software engineering field. I have a Bachelors degree in Computer Science concentrating in Networking and Cloud Computing with a minor in Mathematics from Salem State University. I have been nominated for different awards throughout my schooling and have been the recipient of the Math Achievement Award. I enjoy learning, teaching, and listening - all aspects of education.',
     icon: AcademicCapIcon,
   },
   {
     name: 'Experience',
     description:
-      'I have hands-on experience conducting exploratory data analysis using Python and R with in-depth case studies involving real-world datasets. I have also gained experience with machine learning and deep learning techniques, including regression, classification, clustering, and neural networks. I have experience with front-end web development using HTML, CSS, and JavaScript, as well as popular frameworks like React or Next. Im familiar with full stack applications utilizing MERN Stack. I also have experience with hosting and deploying systems on cloud services like AWS.',
+      'Through various team projects, I have gained experience in agile development, organizing weekly sprints, meetings, and prioritzing tasks based on user priority. This has also given me great experience with creating comprehensive documentation on system requirements, user requirements, use case diagrams, and more to communicate effectively with stakeholders.I have also gained experience with machine learning and deep learning techniques, including regression, classification, clustering, and neural networks. I have experience with full-stack applications along with SQL/NoSQL databases, along with cloud-native applications.',
     icon: PaperAirplaneIcon,
   },
   {
@@ -38,11 +38,11 @@ const features = [
         </a>{' '}
         page to explore some of the projects I have tackled. These projects
         encompass a wide range, from school assignments involving data analysis,
-        machine learning, to web development utilizing cloud services.
-        Additionally, you can also check out some of the projects I have
-        undertaken independently by visiting my portfolio . I am continuously
-        seeking new projects to take on and new skills to acquire, so do not
-        hesitate to get in touch!
+        machine learning, to full-stack web applications and cloud-native
+        applications. Additionally, you can also check out some of the projects
+        I have undertaken independently by visiting my portfolio. I am
+        continuously seeking new projects to take on and new skills to acquire,
+        so do not hesitate to get in touch!
       </>
     ),
     icon: FolderOpenIcon,
@@ -54,10 +54,10 @@ const features = [
       <>
         Proficient in programming languages like Python, JavaScript, and Java.
         Skilled in data analysis and visualization with tools such as Pandas,
-        NumPy, and Matplotlib. Skilled with front-end web development using
-        HTML, CSS, and popular frameworks like React. Knowledge of cloud
-        computing platforms, including AWS and Azure. Familiar with machine
-        learning libraries like TensorFlow and Scikit-Learn.
+        NumPy, and Matplotlib. Skilled with full-stack knowledge utilizing MERN.
+        Knowledge of cloud computing platforms like AWS and the many services it
+        has to offer. Familiar with machine learning libraries like TensorFlow
+        and Scikit-Learn.
       </>
     ),
     icon: CodeBracketSquareIcon,

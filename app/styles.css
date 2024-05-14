@@ -1,0 +1,15 @@
+@media (max-width: 640px) {
+    .flex-cols-3 {
+      flex-direction: column; /* Stack columns on top of each other for small screens */
+    }
+    .mr-3, .mr-0 {
+      margin-right: 0; /* Remove right margin for the first column on small screens */
+    }
+    .col-span-2 {
+      grid-column: span 3; /* Make the second column span full width on small screens */
+      margin-right: 0; /* Remove right margin for the second column on small screens */
+    }
+    .rounded-3xl {
+      border-radius: 0; /* Remove border-radius for images on small screens */
+    }
+  }
