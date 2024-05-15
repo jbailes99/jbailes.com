@@ -12,7 +12,7 @@ export default function Projects() {
         </a>
       ),
       goal: 'Portfolio Website',
-      status: 'Completed',
+      status: 'On-going maintenance and updates',
       // imageUrl:
       // '',
       bio: ' I created a unique and nostalgic portfolio website that pays homage to the classic Windows 95 user interface. Inspired by the retro design elements of the 90s, the website is built using React95, a fantastic React UI library that mimics the look and feel of the iconic Windows 95 operating system.',
@@ -104,10 +104,10 @@ export default function Projects() {
                 </p>
                 <p
                   className={`text-md text-center font-bold leading-7 ${
-                    project.status === 'Completed'
+                    project.status === 'On-going maintenance and updates'
                       ? 'text-green-600'
-                      : project.status === 'In Progress'
-                      ? 'text-yellow-500'
+                      : project.status === 'In Development'
+                      ? 'text-orange-500'
                       : 'text-gray-800'
                   }`}
                 >
