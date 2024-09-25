@@ -11,17 +11,16 @@ export default function Contact() {
     <div className='flex-1  justify-center p-8 overflow-auto'>
       <div className='relative h-full isolate overflow-hidden bg-gray-800 px-8 py-24 shadow-lg rounded-2xl '>
         <div>
-          <h2 className='mx-auto text-gray-200 max-w-2xl text-center text-3xl font-bold tracking-tight  sm:text-5xl'>
-            Lets keep in touch.
+          <h2 className='mx-auto text-gray-200 max-w-2xl text-center text-3xl font-bold tracking-tight sm:text-5xl'>
+            Let’s keep in touch.
           </h2>
-          <div className='grid grid-cols-2 gap-0 w-96 mx-auto mt-12'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 w-11/12 sm:w-96 mx-auto mt-12'>
             <div className='rounded-2xl'>
               <dl className='text-lg leading-6 text-gray-600'>
                 <dt className='sr-only'>Email</dt>
-                <dd className='bg-gray-200 p-1 w-3/4 text-center rounded mx-auto'>
+                <dd className='bg-gray-200 p-3 text-center rounded mx-auto'>
                   <SocialIcon
-                    url='www.github.com'
-                    href='https://github.com/jbailes99'
+                    url='https://github.com/jbailes99'
                     target='_blank'
                     style={{
                       width: '28px',
@@ -29,7 +28,6 @@ export default function Contact() {
                       marginRight: '10px',
                     }}
                   />
-
                   <a
                     className='font-semibold text-indigo-600'
                     href='https://github.com/jbailes99'
@@ -38,21 +36,15 @@ export default function Contact() {
                     Github
                   </a>
                 </dd>
-                <div className='mt-1'>
-                  {/* <dt className='sr-only'>Phone number</dt>
-                    <dd>+1 (555) 905-2345</dd> hiiiiiiii ur really coding tho*/}
-                </div>
               </dl>
             </div>
 
-            <div className='rounded-2xl  '>
-              <h3 className='text-base font-semibold leading-7 text-gray-900'></h3>
-              <dl className=' text-lg leading-6 text-gray-600'>
-                <dt className='sr-only'>Email</dt>
-                <dd className='bg-gray-200 p-1 w-3/4 text-center rounded mx-auto'>
+            <div className='rounded-2xl'>
+              <dl className='text-lg leading-6 text-gray-600'>
+                <dt className='sr-only'>LinkedIn</dt>
+                <dd className='bg-gray-200 p-3 text-center rounded mx-auto'>
                   <SocialIcon
-                    url='www.linkedin.com'
-                    href='https://www.linkedin.com/in/jbailes01/'
+                    url='https://www.linkedin.com/in/jbailes01/'
                     target='_blank'
                     style={{
                       width: '28px',
@@ -65,17 +57,14 @@ export default function Contact() {
                     href='https://www.linkedin.com/in/jbailes01/'
                     target='_blank'
                   >
-                    Linkedin
+                    LinkedIn
                   </a>
                 </dd>
-                <div className='mt-1'>
-                  {/* <dt className='sr-only'>Phone number</dt>
-                    <dd>+1 (555) 905-4567</dd> */}
-                </div>
               </dl>
             </div>
           </div>
         </div>
+
         <div className='relative'>
           <div
             className='inset-0 mt-12 w-3/4 mx-auto flex items-center'
