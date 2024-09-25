@@ -10,6 +10,9 @@ import {
   FolderOpenIcon,
   CodeBracketSquareIcon,
 } from '@heroicons/react/24/outline'
+import './styles.css'
+
+import LineSVG from './components/signature' // Adjust the import path according to your folder structure
 
 const features = [
   {
@@ -67,19 +70,34 @@ const features = [
 export default function HomePage() {
   return (
     <div className='flex-1 overflow-auto flex flex-col mt-0 items-center '>
-      <h1 className='mt-12 sm:text-8xl text-6xl text-center font-bold text-gray-900 transition-transform transform scale-100 hover:scale-105'>
-        Jacob Bailes
-      </h1>
+      <div className='mx-auto mt-8 text-center font-bold text-gray-900 '>
+        {' '}
+        <LineSVG />
+      </div>
+      <h2 className='text-center mt-1 font-semibold text-sm text-indigo-400'>
+        Full Stack Developer
+      </h2>
       {/* <p className='text-med mt-4'>Learn more about me!</p> */}
 
       <div className=' w-full py-6  sm:py-12'>
         <div className='px-6 flex flex-col lg:px-8'>
-          <div className='w-1/2 mx-auto  lg:text-center'>
+          <div className='sm:w-1/2  mx-auto  lg:text-center'>
             <h2 className='text-center font-semibold leading-7 text-indigo-600'>
-              Lets get to know each other.
+              About
             </h2>
+            <p className='text-center sm:mt-0 mt-2 text-gray-700 text-sm sm:text-base md:text-lg'>
+              Hello! I'm <strong>Jacob</strong>, a passionate{' '}
+              <strong>Software Engineer</strong> with <strong>5</strong> years
+              of experience in{' '}
+              <strong>web development and software design</strong>. I thrive on
+              transforming ideas into reality and bringing innovative solutions
+              to challenges. I enjoy working with modern technologies like
+              <strong> React</strong>, <strong>Node</strong>, and{' '}
+              <strong>AWS</strong> to build dynamic applications that enhance
+              user experiences.
+            </p>
 
-            <div className='relative'>
+            <div className='relative sm:mt-0 mt-2'>
               <div
                 className='absolute inset-2 flex items-center'
                 aria-hidden='true'
@@ -88,7 +106,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <p className='mt-8 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
+            <p className='mt-8 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl'>
               The Basics
             </p>
             {/* <p className='mt-6 text-lg leading-8 text-gray-600'>
@@ -112,7 +130,7 @@ export default function HomePage() {
               {features.map((feature) => (
                 <div
                   key={feature.name}
-                  className='relative bg-gray-700 min-h-[320px]  p-4 rounded-xl shadow-xl flex flex-col items-center justify-between'
+                  className='relative bg-gray-700 min-h-[320px]  p-4 rounded-tr-2xl shadow-xl flex flex-col items-center justify-between'
                 >
                   {/* Icon and Title Block */}
                   <div className='w-full flex flex-col items-center'>
