@@ -82,19 +82,18 @@ export default function HomePage() {
       <div className=' w-full py-6  sm:py-12'>
         <div className='px-6 flex flex-col lg:px-8'>
           <div className='sm:w-1/2  mx-auto  lg:text-center'>
-            <h2 className='text-center font-semibold leading-7 text-indigo-600'>
+            <h2 className='text-center font-semibold text-xl text-indigo-600'>
               About
             </h2>
             <p className='text-center sm:mt-0 mt-2 text-gray-700 text-sm sm:text-base md:text-lg'>
               Hello! I&apos;m <strong>Jacob</strong>, a passionate{' '}
               <strong>Software Engineer</strong> with <strong>5</strong> years
               of experience in{' '}
-              <strong>web development and software design</strong>. I thrive on
-              transforming ideas into reality and bringing innovative solutions
-              to challenges. I enjoy working with modern technologies like
-              <strong> React</strong>, <strong>Node</strong>, and{' '}
-              <strong>AWS</strong> to build dynamic applications that enhance
-              user experiences.
+              <strong>web development and software design</strong>.
+            </p>
+            <p className='text-center sm:mt-0 mt-4 text-gray-700 text-sm sm:text-base md:text-lg'>
+              I thrive on transforming ideas into reality and bringing
+              innovative solutions to challenges.
             </p>
 
             <div className='relative sm:mt-0 mt-2'>
