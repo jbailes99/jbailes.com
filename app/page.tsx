@@ -86,7 +86,7 @@ export default function HomePage() {
               About
             </h2>
             <p className='text-center sm:mt-0 mt-2 text-gray-700 text-sm sm:text-base md:text-lg'>
-              Hello! I'm <strong>Jacob</strong>, a passionate{' '}
+              Hello! I&apos;m <strong>Jacob</strong>, a passionate{' '}
               <strong>Software Engineer</strong> with <strong>5</strong> years
               of experience in{' '}
               <strong>web development and software design</strong>. I thrive on
