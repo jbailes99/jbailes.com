@@ -149,7 +149,7 @@ export default function About() {
                 ></span>
               ))}
             </div>
-            <div className='flex-root mx-auto max-w-4xl mt-6 mb-4 lg:mt-14 lg:ml-0 ml-2 lg:mr-0 mr-2'>
+            <div className='mx-auto max-w-4xl mt-6 mb-4 lg:mt-14 lg:ml-0 ml-2 lg:mr-0 mr-2'>
               <div className='text-center text-indigo-700 text-2xl lg:text-3xl font-semibold mb-14'>
                 <h1>Recent Milestones</h1>
                 <div className='relative'>
@@ -282,7 +282,7 @@ export default function About() {
                   <a
                     href='Resume.pdf'
                     download
-                    className='mt-2 text-base text-sm lg:text-lg font-semibold leading-7 underline text-indigo-600  hover:text-orange-400 hover:cursor-pointer'
+                    className='mt-2  text-sm lg:text-lg font-semibold leading-7 underline text-indigo-600  hover:text-orange-400 hover:cursor-pointer'
                   >
                     My resume
                   </a>

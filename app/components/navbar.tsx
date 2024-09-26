@@ -15,16 +15,7 @@ const navigationItems = [
     name: 'Home',
     href: '/',
   },
-  {
-    key: 'projects',
-    name: 'Projects',
-    href: '/projects',
-  },
-  {
-    key: 'about',
-    name: 'About',
-    href: '/about',
-  },
+
   {
     key: 'contact',
     name: 'Contact',
