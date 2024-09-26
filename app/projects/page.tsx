@@ -23,7 +23,7 @@ export default function Projects() {
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400'
         >
-          fitxpress.app
+          FitXpress
         </a>
       ),
       goal: 'Full-Stack Web Application',
@@ -36,7 +36,7 @@ export default function Projects() {
         'AWS Cognito',
         'TypeScript',
         'JavaScript',
-        'TailWind CSS',
+        'Tailwind CSS',
       ],
     },
     {
@@ -75,7 +75,7 @@ export default function Projects() {
       ),
       goal: 'Web Application',
       bio: 'A website for a professional League of Legends player to track his games and statistics on a single character. Includes a backend that utilizes RiotAPI.',
-      tags: ['React', 'Express', 'AWS', 'TypeScript', 'TailWind CSS'],
+      tags: ['React', 'Express', 'AWS', 'TypeScript', 'Tailwind CSS'],
     },
     // More projects...
   ]
