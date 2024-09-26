@@ -65,7 +65,7 @@ const timeline = [
     date: '',
     datetime: '2020-09-28',
     icon: ArrowRightIcon,
-    iconBackground: 'bg-gray-800',
+    iconBackground: 'bg-gray-700',
   },
   {
     id: 5,
@@ -275,7 +275,7 @@ export default function HomePage() {
               {features.map((feature) => (
                 <div
                   key={feature.name}
-                  className='relative bg-gray-800 min-h-[320px]  p-4 rounded-tr-2xl rounded-bl-2xl shadow-xl flex flex-col items-center justify-between'
+                  className='relative bg-gray-700 min-h-[320px]  p-4 rounded-tr-2xl rounded-bl-2xl shadow-xl flex flex-col items-center justify-between'
                 >
                   {/* Icon and Title Block */}
                   <div className='w-full flex flex-col items-center'>
@@ -304,10 +304,10 @@ export default function HomePage() {
               aria-hidden='true'
               className='absolute inset-0 flex items-center'
             >
-              <div className='w-3/4 mx-auto border-t border-gray-800' />{' '}
+              <div className='w-3/4 mx-auto border-t border-gray-700' />{' '}
             </div>
             <div className='relative flex justify-center'>
-              <span className='bg-white px-6 sm:text-4xl text-2xl text-gray-800'>
+              <span className='bg-white px-6 sm:text-4xl text-2xl text-gray-700'>
                 Projects
               </span>
             </div>
@@ -321,7 +321,7 @@ export default function HomePage() {
               aria-hidden='true'
               className='absolute inset-0 flex items-center'
             >
-              <div className='w-full mx-auto border-t border-gray-800' />{' '}
+              <div className='w-full mx-auto border-t border-gray-700' />{' '}
             </div>
             <div className='relative flex justify-center'>
               <span className='bg-white px-6 sm:text-4xl text-center text-2xl text-gray-800'>
