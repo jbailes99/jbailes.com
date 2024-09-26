@@ -150,7 +150,7 @@ const features = [
     name: 'Skills',
     description: (
       <>
-        Proficient in programming languages like JavaScript, Python and Java. .
+        Proficient in programming languages like JavaScript, Python and Java.
         Familiar with MERN Stack applications and cloud-native apps utilizing
         AWS. Skilled in data analysis and visualization with tools such as
         Pandas, NumPy, and Matplotlib. Familiar with machine learning libraries
