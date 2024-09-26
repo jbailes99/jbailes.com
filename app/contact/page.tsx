@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons'
 export default function Contact() {
   return (
     <div className='flex-1 justify-center p-8 overflow-auto'>
-      <div className=' bg-gray-800 px-8 py-24 shadow-lg h-full rounded-2xl'>
+      <div className=' bg-gray-800 px-8 py-24 sm:h-full hadow-lg  rounded-2xl'>
         <div>
           <h2 className='mx-auto text-gray-200 max-w-2xl text-center text-3xl font-bold tracking-tight sm:text-5xl'>
             Let’s keep in touch.
