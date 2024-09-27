@@ -17,9 +17,8 @@ const navigationItems = [
     href: '/',
   },
   {
-    key: 'resume',
     name: 'My Resume',
-    href: '/resume.pdf', // Update this to the path of your PDF
+    href: '/Resume.pdf', // Update this to the path of your PDF
     target: '_blank', // Open in a new tab
     download: true, // This attribute suggests that the link is for downloading
   },
