@@ -280,7 +280,7 @@ export default function HomePage() {
             </div>
           </div> */}
 
-          <div className='  py-12 rounded-md  max-w-full sm:mt-16 lg:mt-18'>
+          <div className='  py-12 rounded-md  max-w-full sm:mt-4 lg:mt-18'>
             <dl className='grid sm:w-11/12 mx-auto grid-cols-1 sm:gap-x-12 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16'>
               {features.map((feature) => (
                 <div
