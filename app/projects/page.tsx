@@ -82,10 +82,10 @@ export default function Projects() {
 
   return (
     <div className='flex-1 overflow-auto flex-col justify-center items-center h-full p-8'>
-      <div className=' max-w-full px-6 lg:px-8'>
+      <div className=' max-w-full sm:px-6 lg:px-8'>
         <ul
           role='list'
-          className='mx-auto mt-6 sm:w-10/12 grid  grid-cols-1 gap-x-14 gap-y-10 sm:grid-cols-4 lg:max-w-4xl lg:gap-x-12 xl:max-w-none'
+          className='mx-auto mt-6 sm:w-10/12  grid  grid-cols-1 sm:gap-x-14 gap-y-10 sm:grid-cols-4 lg:max-w-4xl lg:gap-x-12 xl:max-w-none'
         >
           {people.map((project, index) => (
             <li

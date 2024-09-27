@@ -8,6 +8,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import cn from 'classnames'
 import { Fragment } from 'react'
+import LineSVG from './signature' // Adjust the import path according to your folder structure
 
 const navigationItems = [
   {
@@ -15,11 +16,12 @@ const navigationItems = [
     name: 'Home',
     href: '/',
   },
-
   {
-    key: 'contact',
-    name: 'Contact',
-    href: '/contact',
+    key: 'resume',
+    name: 'My Resume',
+    href: '/resume.pdf', // Update this to the path of your PDF
+    target: '_blank', // Open in a new tab
+    download: true, // This attribute suggests that the link is for downloading
   },
 ]
 
@@ -40,13 +42,7 @@ export default function Navbar() {
             <div className='relative flex h-16 items-center justify-between'>
               <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                 <div className='flex flex-shrink-0 items-center'>
-                  <Image
-                    src='/me.png'
-                    alt='me'
-                    width={48}
-                    height={48}
-                    className='mb-0 rounded-full overflow-hidden '
-                  />
+                  <LineSVG />
                 </div>
               </div>
               <div className='flex items-center justify-center sm:items-stretch sm:justify-start'>

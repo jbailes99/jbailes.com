@@ -29,11 +29,13 @@
   .svg {
     max-width: 100%; /* Make it full width on small screens */
     height: auto; /* Maintain aspect ratio */
+
   }
 }
 
   .path {
     stroke-dasharray: 3417.884521484375px; 
+    stroke: white;
     stroke-dashoffset: 3417.884521484375px;
     animation: LineAnimation 4s ease forwards; /* Corrected here */
   }

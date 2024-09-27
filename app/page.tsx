@@ -26,6 +26,8 @@ import 'react-social-icons/whatsapp'
 import LineSVG from './components/signature' // Adjust the import path according to your folder structure
 import Projects from './projects/page' // Adjust the path according to your project structure
 import classNames from 'classnames'
+import LoadingOverlay from './components/overlay' // import the overlay
+
 const timeline = [
   {
     id: 1,
@@ -164,10 +166,18 @@ const features = [
 export default function HomePage() {
   return (
     <div className='flex-1 overflow-auto flex flex-col mt-0 items-center '>
+      <LoadingOverlay />
+
       <div className='mx-auto mt-8 text-center font-bold text-gray-900 '>
         {' '}
-        <LineSVG />
+        {/* <LineSVG /> */}
+        <img
+          src='/me.png'
+          alt='me'
+          className='mb-4 rounded-full h-24 w-24 text-center mx-auto overflow-hidden '
+        />
       </div>
+
       <div className='relative w-full mt-4'>
         {' '}
         <div aria-hidden='true' className='absolute inset-0 flex items-center'>
@@ -211,7 +221,7 @@ export default function HomePage() {
 
       {/* <p className='text-med mt-4'>Learn more about me!</p> */}
 
-      <div className=' w-full py-6  sm:py-12'>
+      <div className=' w-full py-6  sm:py-6'>
         <div className='px-6 flex flex-col lg:px-8'>
           <div className='sm:w-1/2  mx-auto  lg:text-center'>
             {/* <h2 className='text-center font-semibold text-4xl text-indigo-600'>
@@ -271,7 +281,7 @@ export default function HomePage() {
           </div> */}
 
           <div className='  py-12 rounded-md  max-w-full sm:mt-16 lg:mt-18'>
-            <dl className='grid sm:w-full mx-auo grid-cols-1 gap-x-24 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16'>
+            <dl className='grid sm:w-11/12 mx-auto grid-cols-1 sm:gap-x-12 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16'>
               {features.map((feature) => (
                 <div
                   key={feature.name}
@@ -374,6 +384,89 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+        </div>
+        <div className='bg-gray-700 sm:w-10/12 w-11/12 mx-auto rounded-tr-xl rounded-bl-xl  p-4'>
+          <div>
+            <h1 className='mx-auto text-gray-200 font-semibold text-2xl text-center'>
+              Contact
+            </h1>
+            <div className='mt-2 mb-2'>
+              <dl className='flex flex-col justify-center sm:flex sm:flex-row sm:justify-between sm:text-xl sm:w-1/2 w-full mx-auto leading-6 text-gray-900'>
+                <div className='sm:mx-0 mx-auto mb-2 sm:mb-0'>
+                  {' '}
+                  {/* Add mb-2 for mobile spacing */}
+                  <dt className='sr-only'></dt>
+                  <dd className='flex items-center'>
+                    <SocialIcon
+                      url='mailto:contact@jbailes.com'
+                      target='_blank'
+                      style={{
+                        width: '30px',
+                        height: '30px',
+                        marginRight: '10px',
+                      }}
+                    />
+                    <a
+                      className='font-semibold text-indigo-300'
+                      href='mailto:contact@jbailes.com'
+                    >
+                      contact@jbailes.com
+                    </a>
+                  </dd>
+                </div>
+                <div className='sm:mx-0 mx-auto'>
+                  <dt className='sr-only'>Phone number</dt>
+                  <dd className='font-semibold text-indigo-300 flex items-center'>
+                    <SocialIcon
+                      url='https://wa.me/17815131582'
+                      target='_blank'
+                      style={{
+                        width: '30px',
+                        height: '30px',
+                        marginRight: '10px',
+                      }}
+                    />
+                    +1 (781) 513-1582
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            {/* <div className='relative'>
+              <div
+                className='inset-0 mt-12 w-3/4 mx-auto flex items-center'
+                aria-hidden='true'
+              >
+                <div className='w-full border-t border-gray-400' />
+              </div>
+            </div>
+
+            <div className='mt-12 flex flex-col items-center'>
+              <h2 className='mx-auto text-gray-200 max-w-2xl text-center text-3xl font-bold tracking-tight sm:text-5xl'>
+                Resume
+              </h2>
+              <div className='mt-4'>
+                <dt className='sr-only'>Resume</dt>
+                <dd className='font-semibold text-gray-200 flex items-center'>
+                  <a
+                    href='Resume.pdf'
+                    download
+                    className='text-gray-300 hover:text-orange-400 hover:cursor-pointer'
+                  >
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      className='h-12 w-12 text-gray-100 hover:text-orange-400 mr-2'
+                      viewBox='0 0 20 20'
+                      fill='currentColor'
+                    >
+                      <path d='M10 2a1 1 0 011 1v1a1 1 0 01-2 0V3a1 1 0 011-1z' />
+                      <path d='M5 4a1 1 0 011-1h8a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-1-1V4z' />
+                    </svg>
+                  </a>
+                </dd>
+              </div>
+            </div> */}
+          </div>
         </div>
       </div>
     </div>
