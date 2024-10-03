@@ -90,7 +90,7 @@ export default function Projects() {
           {people.map((project, index) => (
             <li
               key={index}
-              className='bg-gray-700 rounded-tr-2xl w-full rounded-bl-2xl flex flex-col gap-6 xl:flex-row shadow-xl p-6'
+              className='bg-slate-800 rounded-tr-2xl w-full rounded-bl-2xl flex flex-col gap-6 xl:flex-row shadow-xl p-6'
             >
               <div className='flex-auto'>
                 <h3 className='text-xl font-semibold text-center leading-8 tracking-tight text-gray-900'>

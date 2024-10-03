@@ -285,7 +285,7 @@ export default function HomePage() {
               {features.map((feature) => (
                 <div
                   key={feature.name}
-                  className='relative bg-gray-700 min-h-[320px]  p-4 rounded-tr-2xl rounded-bl-2xl shadow-xl flex flex-col items-center justify-between'
+                  className='relative bg-slate-800 min-h-[320px] p-4 rounded-tr-2xl rounded-bl-2xl shadow-xl flex flex-col items-center justify-between'
                 >
                   {/* Icon and Title Block */}
                   <div className='w-full flex flex-col items-center'>
@@ -295,13 +295,13 @@ export default function HomePage() {
                         aria-hidden='true'
                       />
                     </div>
-                    <dt className=' font-semibold mt-2 text-center text-3xl text-gray-100'>
+                    <dt className='font-semibold mt-2 text-center text-3xl text-gray-100'>
                       {feature.name}
                     </dt>
                   </div>
 
                   {/* Description Block */}
-                  <dd className='mt-4 text-center my-auto mx-2 leading-7 text-gray-100'>
+                  <dd className='mt-4 text-center my-auto mx-2 leading-7 text-gray-200'>
                     {feature.description}
                   </dd>
                 </div>
@@ -385,7 +385,7 @@ export default function HomePage() {
             ))}
           </ul>
         </div>
-        <div className='bg-gray-700 sm:w-10/12 w-11/12 mx-auto rounded-tr-xl rounded-bl-xl  p-4'>
+        <div className='bg-slate-800 sm:w-10/12 w-11/12 mx-auto rounded-tr-xl rounded-tl-xl  p-4'>
           <div>
             <h1 className='mx-auto text-gray-200 font-semibold text-2xl text-center'>
               Contact
