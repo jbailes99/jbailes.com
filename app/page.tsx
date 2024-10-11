@@ -37,7 +37,7 @@ const timeline = [
     date: 'Jan 2020',
     datetime: '2021-01-20',
     icon: BookOpenIcon,
-    iconBackground: 'bg-indigo-500',
+    iconBackground: 'bg-blue-500',
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ const timeline = [
     date: 'Jan 2021',
     datetime: '2021-01-20',
     icon: BookOpenIcon,
-    iconBackground: 'bg-indigo-500',
+    iconBackground: 'bg-blue-500',
   },
   {
     id: 4,
@@ -77,7 +77,7 @@ const timeline = [
     date: 'Jan 2023',
     datetime: '2023-01-30',
     icon: BookOpenIcon,
-    iconBackground: 'bg-indigo-500',
+    iconBackground: 'bg-blue-500',
   },
   {
     id: 6,
@@ -165,310 +165,292 @@ const features = [
 
 export default function HomePage() {
   return (
-    <div className='flex-1 overflow-auto flex flex-col mt-0 items-center '>
-      <LoadingOverlay />
+    // Change this div to have a min-height of 100vh and use flex column
+    <div className='flex flex-col min-h-screen'>
+      {/* Wrap the main content in a div with flex-grow */}
+      <div className='flex-grow'>
+        <LoadingOverlay />
 
-      <div className='mx-auto mt-8 text-center font-bold text-gray-900 '>
-        {' '}
-        {/* <LineSVG /> */}
-        <img
-          src='/me.png'
-          alt='me'
-          className='mb-4 rounded-full h-24 w-24 text-center mx-auto overflow-hidden '
-        />
-      </div>
-
-      <div className='relative w-full mt-4'>
-        {' '}
-        <div aria-hidden='true' className='absolute inset-0 flex items-center'>
-          <div className='sm:w-1/4 w-3/4 mx-auto border-t border-indigo-600' />{' '}
+        <div className='mx-auto mt-8 text-center font-bold text-gray-900 '>
+          {' '}
+          {/* <LineSVG /> */}
+          <img
+            src='/me.png'
+            alt='me'
+            className='mb-4 rounded-full h-24 w-24 text-center mx-auto overflow-hidden '
+          />
         </div>
-        <div className='relative flex justify-center'>
-          <span className='bg-white px-2 text-sm text-gray-500'>
-            Full Stack Developer
-          </span>
+
+        <div className='relative w-full mt-4'>
+          {' '}
+          <div
+            aria-hidden='true'
+            className='absolute inset-0 flex items-center'
+          >
+            <div className='sm:w-1/4 w-3/4 mx-auto border-t border-indigo-600' />{' '}
+          </div>
+          <div className='relative flex justify-center'>
+            <span className='bg-white px-2 text-sm text-gray-500'>
+              Full Stack Developer
+            </span>
+          </div>
         </div>
-      </div>
-      <div className='flex justify-center sm:space-x-14 space-x-10 mt-6'>
-        {/* JavaScript Icon */}
-        <img
-          src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'
-          alt='JavaScript'
-          className='h-16 w-16'
-        />
+        <div className='flex justify-center sm:space-x-14 space-x-10 mt-6'>
+          {/* JavaScript Icon */}
+          <img
+            src='https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'
+            alt='JavaScript'
+            className='h-16 w-16'
+          />
 
-        {/* Node Icon */}
-        <img
-          src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg'
-          alt='Node.js'
-          className='h-16 w-16'
-        />
+          {/* Node Icon */}
+          <img
+            src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg'
+            alt='Node.js'
+            className='h-16 w-16'
+          />
 
-        {/* React Icon */}
-        <img
-          src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'
-          alt='React'
-          className='h-16 w-16'
-        />
+          {/* React Icon */}
+          <img
+            src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg'
+            alt='React'
+            className='h-16 w-16'
+          />
 
-        {/* AWS Icon */}
-        <img
-          src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg'
-          alt='AWS'
-          className='h-16 w-16'
-        />
-      </div>
+          {/* AWS Icon */}
+          <img
+            src='https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg'
+            alt='AWS'
+            className='h-16 w-16'
+          />
+        </div>
 
-      {/* <p className='text-med mt-4'>Learn more about me!</p> */}
+        {/* <p className='text-med mt-4'>Learn more about me!</p> */}
 
-      <div className=' w-full py-6  sm:py-6'>
-        <div className='px-6 flex flex-col lg:px-8'>
-          <div className='sm:w-1/2  mx-auto  lg:text-center'>
-            {/* <h2 className='text-center font-semibold text-4xl text-indigo-600'>
+        <div className=' w-full py-6  sm:py-6'>
+          <div className='px-6 flex flex-col lg:px-8'>
+            <div className='sm:w-1/2  mx-auto  lg:text-center'>
+              {/* <h2 className='text-center font-semibold text-4xl text-indigo-600'>
               About
             </h2> */}
-            <p className='text-center sm:mt-0  mt-2 text-gray-700 text-md sm:text-base md:text-lg'>
-              Hello! I&apos;m <strong>Jacob</strong>, a passionate{' '}
-              <strong>Software Engineer</strong> with <strong>5</strong> years
-              of experience in{' '}
-              <strong>web development and software design</strong>.
-            </p>
-            <p className='text-center sm:mt-0 mt-4 text-gray-700 text-md sm:text-base md:text-lg'>
-              I thrive on transforming ideas into reality and bringing
-              innovative solutions to challenges.
-            </p>
+              <p className='text-center sm:mt-0  mt-2 text-gray-700 text-md sm:text-base md:text-lg'>
+                Hello! I&apos;m <strong>Jacob</strong>, a passionate{' '}
+                <strong>Software Engineer</strong> with <strong>5</strong> years
+                of experience in{' '}
+                <strong>web development and software design</strong>.
+              </p>
+              <p className='text-center sm:mt-0 mt-4 text-gray-700 text-md sm:text-base md:text-lg'>
+                I thrive on transforming ideas into reality and bringing
+                innovative solutions to challenges.
+              </p>
+            </div>
 
-            {/* <p className='mt-8 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl'>
-              Straight to it.
-            </p> */}
-            {/* <p className='mt-6 text-lg leading-8 text-gray-600'>
-              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-              Suspendisse eget egestas a elementum pulvinar et feugiat blandit
-              at. In mi viverra elit nunc.
-            </p> */}
+            <div className='mx-auto mt-6 space-x-4  '>
+              <SocialIcon
+                url='https://www.linkedin.com/in/jbailes01/'
+                target='_blank'
+                className='h-12 w-12'
+              />
+              <a
+                className='font-semibold text-indigo-600'
+                href='https://www.linkedin.com/in/jbailes01/'
+                target='_blank'
+              ></a>
+              <SocialIcon
+                url='https://www.github.com/jbailes99/'
+                target='_blank'
+                className='h-12 w-12'
+              />
+              <a
+                className='font-semibold text-indigo-600'
+                href='https://www.github.com/jbailes99/'
+                target='_blank'
+              ></a>
+            </div>
+
+            <div className='  py-12 rounded-md  max-w-full sm:mt-4 lg:mt-18'>
+              <dl className='grid sm:w-11/12 mx-auto grid-cols-1 sm:gap-x-12 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16'>
+                {features.map((feature) => (
+                  <div
+                    key={feature.name}
+                    className='relative bg-gray-700 min-h-[320px] p-4 rounded-tr-2xl rounded-bl-2xl shadow-xl border-2 border-blue-500 flex flex-col items-center justify-between'
+                  >
+                    {/* Icon and Title Block */}
+                    <div className='w-full flex flex-col items-center'>
+                      <div className='rounded-lg bg-gray-700 h-12 w-12 flex items-center justify-center'>
+                        <feature.icon
+                          className='h-12 w-12 text-blue-500 '
+                          aria-hidden='true'
+                        />
+                      </div>
+                      <dt className='font-semibold mt-2 text-center text-3xl text-gray-200'>
+                        {feature.name}
+                      </dt>
+                    </div>
+
+                    {/* Description Block */}
+                    <dd className='mt-4 text-center sm:text-md 3xl:text-md 4xl:text-lg my-auto mx-2 leading-7 text-gray-200'>
+                      {feature.description}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
           </div>
+          <div>
+            <div className='relative w-full mt-4'>
+              {' '}
+              <div
+                aria-hidden='true'
+                className='absolute inset-0 flex items-center'
+              >
+                <div className='w-3/4 mx-auto border-t border-gray-700' />{' '}
+              </div>
+              <div className='relative flex justify-center'>
+                <span className='bg-white px-6 sm:text-3xl text-2xl text-gray-700'>
+                  Recent Projects & Milestones
+                </span>
+              </div>
+            </div>
+          </div>
+          {/* Projects and Timeline */}
+          <div className='w-full mx-auto mt-4 lg:flex '>
+            <Projects />
+            <div className='lg:w-1/3 justify-center flex items-center rounded-2xl mx-auto p-8'>
+              <ul role='list' className='text-md mt-6 lg:text-lg'>
+                {timeline.map((event, eventIdx) => (
+                  <li key={event.id}>
+                    <div className='relative pb-5 lg:pb-12'>
+                      {eventIdx !== timeline.length - 1 ? (
+                        <span
+                          className='absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200'
+                          aria-hidden='true'
+                        />
+                      ) : null}
+                      <div className='relative flex space-x-12 leading-6'>
+                        <div>
+                          <span
+                            className={classNames(
+                              event.iconBackground,
+                              'h-9 w-9 rounded-full flex items-center justify-center ring-8 ring-white'
+                            )}
+                          >
+                            <event.icon
+                              className='h-5 w-5 text-white'
+                              aria-hidden='true'
+                            />
+                          </span>
+                        </div>
+                        <div className='flex min-w-3 flex-1 justify-between space-x-4 pt-1.5'>
+                          <div>
+                            <p className='text-med text-gray-500'>
+                              {event.content}{' '}
+                              <a
+                                href={event.href}
+                                className='font-bold text-gray-600'
+                              >
+                                {event.target}
+                              </a>
+                            </p>
+                          </div>
+                          <div className='whitespace-nowrap text-right text- text-gray-500'>
+                            <time dateTime={event.datetime}>{event.date}</time>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <div className='mx-auto mt-6 space-x-4  '>
-            <SocialIcon
-              url='https://www.linkedin.com/in/jbailes01/'
-              target='_blank'
-              className='h-12 w-12'
-            />
-            <a
-              className='font-semibold text-indigo-600'
-              href='https://www.linkedin.com/in/jbailes01/'
-              target='_blank'
-            ></a>
-            <SocialIcon
-              url='https://www.github.com/jbailes99/'
-              target='_blank'
-              className='h-12 w-12'
-            />
-            <a
-              className='font-semibold text-indigo-600'
-              href='https://www.github.com/jbailes99/'
-              target='_blank'
-            ></a>
+      {/* Footer stays outside the main content div */}
+      <footer className='bg-gray-800 p-4 text-white '>
+        <div>
+          <h1 className='mx-auto text-gray-200  text-md mt-2 text-center'>
+            Contact
+          </h1>
+          <div className='mt-2 mb-2'>
+            <dl className='flex flex-col justify-center sm:flex sm:flex-row space-x-24 sm:text-md sm:w-1/2 w-full mx-auto leading-6 text-gray-900'>
+              <div className='sm:mx-0 mx-auto mb-2 sm:mb-0'>
+                {' '}
+                {/* Add mb-2 for mobile spacing */}
+                <dt className='sr-only'></dt>
+                <dd className='flex items-center'>
+                  <SocialIcon
+                    url='mailto:contact@jbailes.com'
+                    target='_blank'
+                    style={{
+                      width: '30px',
+                      height: '30px',
+                      marginRight: '10px',
+                    }}
+                  />
+                  <a
+                    className=' text-indigo-300'
+                    href='mailto:contact@jbailes.com'
+                  >
+                    contact@jbailes.com
+                  </a>
+                </dd>
+              </div>
+              <div className='sm:mx-0 mx-auto'>
+                <dt className='sr-only'>Phone number</dt>
+                <dd className=' text-indigo-300 flex items-center'>
+                  <SocialIcon
+                    url='https://wa.me/17815131582'
+                    target='_blank'
+                    style={{
+                      width: '30px',
+                      height: '30px',
+                      marginRight: '10px',
+                    }}
+                  />
+                  +1 (781) 513-1582
+                </dd>
+              </div>
+            </dl>
           </div>
 
           {/* <div className='relative'>
             <div
-            className='absolute inset-6 flex items-center'
-            aria-hidden='true'
+              className='inset-0 mt-12 w-3/4 mx-auto flex items-center'
+              aria-hidden='true'
             >
-              <div className='w-full border-t border-gray-600' />
+              <div className='w-full border-t border-gray-400' />
+            </div>
+          </div>
+
+          <div className='mt-12 flex flex-col items-center'>
+            <h2 className='mx-auto text-gray-200 max-w-2xl text-center text-3xl font-bold tracking-tight sm:text-5xl'>
+              Resume
+            </h2>
+            <div className='mt-4'>
+              <dt className='sr-only'>Resume</dt>
+              <dd className='font-semibold text-gray-200 flex items-center'>
+                <a
+                  href='Resume.pdf'
+                  download
+                  className='text-gray-300 hover:text-orange-400 hover:cursor-pointer'
+                >
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    className='h-12 w-12 text-gray-100 hover:text-orange-400 mr-2'
+                    viewBox='0 0 20 20'
+                    fill='currentColor'
+                  >
+                    <path d='M10 2a1 1 0 011 1v1a1 1 0 01-2 0V3a1 1 0 011-1z' />
+                    <path d='M5 4a1 1 0 011-1h8a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-1-1V4z' />
+                  </svg>
+                </a>
+              </dd>
             </div>
           </div> */}
-
-          <div className='  py-12 rounded-md  max-w-full sm:mt-4 lg:mt-18'>
-            <dl className='grid sm:w-11/12 mx-auto grid-cols-1 sm:gap-x-12 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16'>
-              {features.map((feature) => (
-                <div
-                  key={feature.name}
-                  className='relative bg-slate-800 min-h-[320px] p-4 rounded-tr-2xl rounded-bl-2xl shadow-xl flex flex-col items-center justify-between'
-                >
-                  {/* Icon and Title Block */}
-                  <div className='w-full flex flex-col items-center'>
-                    <div className='rounded-lg bg-indigo-600 h-12 w-12 flex items-center justify-center'>
-                      <feature.icon
-                        className='h-12 w-12 text-white'
-                        aria-hidden='true'
-                      />
-                    </div>
-                    <dt className='font-semibold mt-2 text-center text-3xl text-gray-100'>
-                      {feature.name}
-                    </dt>
-                  </div>
-
-                  {/* Description Block */}
-                  <dd className='mt-4 text-center my-auto mx-2 leading-7 text-gray-200'>
-                    {feature.description}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-          <div className='relative w-full mt-4'>
-            {' '}
-            <div
-              aria-hidden='true'
-              className='absolute inset-0 flex items-center'
-            >
-              <div className='w-3/4 mx-auto border-t border-gray-700' />{' '}
-            </div>
-            <div className='relative flex justify-center'>
-              <span className='bg-white px-6 sm:text-4xl text-2xl text-gray-700'>
-                Projects
-              </span>
-            </div>
-          </div>
-          <Projects />
         </div>
-        <div className='w-3/4 mx-auto mt-4'>
-          <div className='relative w-full mt-4'>
-            {' '}
-            <div
-              aria-hidden='true'
-              className='absolute inset-0 flex items-center'
-            >
-              <div className='w-full mx-auto border-t border-gray-700' />{' '}
-            </div>
-            <div className='relative flex justify-center'>
-              <span className='bg-white px-6 sm:text-4xl text-center text-2xl text-gray-800'>
-                Recent Milestones
-              </span>
-            </div>
-          </div>
-          <ul role='list' className='text-md mt-12 lg:text-lg'>
-            {timeline.map((event, eventIdx) => (
-              <li key={event.id}>
-                <div className='relative pb-5 lg:pb-12'>
-                  {eventIdx !== timeline.length - 1 ? (
-                    <span
-                      className='absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200'
-                      aria-hidden='true'
-                    />
-                  ) : null}
-                  <div className='relative flex space-x-12 leading-6'>
-                    <div>
-                      <span
-                        className={classNames(
-                          event.iconBackground,
-                          'h-9 w-9 rounded-full flex items-center justify-center ring-8 ring-white'
-                        )}
-                      >
-                        <event.icon
-                          className='h-5 w-5 text-white'
-                          aria-hidden='true'
-                        />
-                      </span>
-                    </div>
-                    <div className='flex min-w-3 flex-1 justify-between space-x-4 pt-1.5'>
-                      <div>
-                        <p className='text-med text-gray-500'>
-                          {event.content}{' '}
-                          <a
-                            href={event.href}
-                            className='font-bold text-gray-600'
-                          >
-                            {event.target}
-                          </a>
-                        </p>
-                      </div>
-                      <div className='whitespace-nowrap text-right text- text-gray-500'>
-                        <time dateTime={event.datetime}>{event.date}</time>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className='bg-slate-800 sm:w-10/12 w-11/12 mx-auto rounded-tr-xl rounded-tl-xl  p-4'>
-          <div>
-            <h1 className='mx-auto text-gray-200 font-semibold text-2xl text-center'>
-              Contact
-            </h1>
-            <div className='mt-2 mb-2'>
-              <dl className='flex flex-col justify-center sm:flex sm:flex-row sm:justify-between sm:text-xl sm:w-1/2 w-full mx-auto leading-6 text-gray-900'>
-                <div className='sm:mx-0 mx-auto mb-2 sm:mb-0'>
-                  {' '}
-                  {/* Add mb-2 for mobile spacing */}
-                  <dt className='sr-only'></dt>
-                  <dd className='flex items-center'>
-                    <SocialIcon
-                      url='mailto:contact@jbailes.com'
-                      target='_blank'
-                      style={{
-                        width: '30px',
-                        height: '30px',
-                        marginRight: '10px',
-                      }}
-                    />
-                    <a
-                      className='font-semibold text-indigo-300'
-                      href='mailto:contact@jbailes.com'
-                    >
-                      contact@jbailes.com
-                    </a>
-                  </dd>
-                </div>
-                <div className='sm:mx-0 mx-auto'>
-                  <dt className='sr-only'>Phone number</dt>
-                  <dd className='font-semibold text-indigo-300 flex items-center'>
-                    <SocialIcon
-                      url='https://wa.me/17815131582'
-                      target='_blank'
-                      style={{
-                        width: '30px',
-                        height: '30px',
-                        marginRight: '10px',
-                      }}
-                    />
-                    +1 (781) 513-1582
-                  </dd>
-                </div>
-              </dl>
-            </div>
-
-            {/* <div className='relative'>
-              <div
-                className='inset-0 mt-12 w-3/4 mx-auto flex items-center'
-                aria-hidden='true'
-              >
-                <div className='w-full border-t border-gray-400' />
-              </div>
-            </div>
-
-            <div className='mt-12 flex flex-col items-center'>
-              <h2 className='mx-auto text-gray-200 max-w-2xl text-center text-3xl font-bold tracking-tight sm:text-5xl'>
-                Resume
-              </h2>
-              <div className='mt-4'>
-                <dt className='sr-only'>Resume</dt>
-                <dd className='font-semibold text-gray-200 flex items-center'>
-                  <a
-                    href='Resume.pdf'
-                    download
-                    className='text-gray-300 hover:text-orange-400 hover:cursor-pointer'
-                  >
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      className='h-12 w-12 text-gray-100 hover:text-orange-400 mr-2'
-                      viewBox='0 0 20 20'
-                      fill='currentColor'
-                    >
-                      <path d='M10 2a1 1 0 011 1v1a1 1 0 01-2 0V3a1 1 0 011-1z' />
-                      <path d='M5 4a1 1 0 011-1h8a1 1 0 011 1v14a1 1 0 01-1 1H6a1 1 0 01-1-1V4z' />
-                    </svg>
-                  </a>
-                </dd>
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </div>
+      </footer>
     </div>
   )
 }

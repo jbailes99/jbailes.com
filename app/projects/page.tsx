@@ -70,7 +70,7 @@ export default function Projects() {
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400'
         >
-          bestdraven.world
+          LoL Showcase
         </a>
       ),
       goal: 'Web Application',
@@ -82,17 +82,17 @@ export default function Projects() {
 
   return (
     <div className='flex-1 overflow-auto flex-col justify-center items-center h-full p-8'>
-      <div className=' max-w-full sm:px-6 lg:px-8'>
+      <div className='max-w-full'>
         <ul
           role='list'
-          className='mx-auto mt-6 sm:w-10/12  grid  grid-cols-1 sm:gap-x-14 gap-y-10 sm:grid-cols-4 lg:max-w-4xl lg:gap-x-12 xl:max-w-none'
+          className='grid w-full mx-auto grid-cols-1 gap-6 sm:gap-6 lg:gap-6 xl:gap-6 3xl:gap-14 sm:grid-cols-2'
         >
           {people.map((project, index) => (
             <li
               key={index}
-              className='bg-slate-800 rounded-tr-2xl w-full rounded-bl-2xl flex flex-col gap-6 xl:flex-row shadow-xl p-6'
+              className='bg-gray-700 border-2 border-blue-500 rounded-tr-2xl rounded-tl-2xl flex flex-col gap-6 shadow-xl p-6 h-full'
             >
-              <div className='flex-auto'>
+              <div className='flex flex-col h-full'>
                 <h3 className='text-xl font-semibold text-center leading-8 tracking-tight text-gray-900'>
                   {project.name}
                 </h3>
@@ -100,13 +100,15 @@ export default function Projects() {
                   {project.goal}
                 </p>
 
-                <p className='mt-6 text-sm text-start w-3/4 mx-auto text-gray-200'>
-                  {project.bio}
-                </p>
+                <div className='flex-grow overflow-auto'>
+                  <p className='mt-6 w-3/4 mx-auto text-start sm:text-md 3xl:text-lg 4xl:text-xl text-gray-100'>
+                    {project.bio}
+                  </p>
+                </div>
                 {project.tags &&
                   Array.isArray(project.tags) &&
                   project.tags.length > 0 && (
-                    <div className='flex flex-wrap justify-center mt-4 max-w-full'>
+                    <div className='flex flex-wrap justify-center mt-4'>
                       {project.tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
