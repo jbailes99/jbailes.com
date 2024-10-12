@@ -316,7 +316,8 @@ export default function HomePage() {
           {/* Projects and Timeline */}
           <div className='w-full mx-auto mt-4 lg:flex '>
             <Projects />
-            <div className='lg:w-1/3 justify-center flex items-center rounded-2xl mx-auto p-8'>
+            <div className='lg:w-1/3  justify-center flex flex-col bg-gray-700 border-2 border-blue-500 sm:mr-12 mr-4 ml-4 items-center rounded-2xl mx-auto p-8'>
+              <h1 className='text-gray-200 text-2xl font-bold'>Milestones</h1>
               <ul role='list' className='text-md mt-6 lg:text-lg'>
                 {timeline.map((event, eventIdx) => (
                   <li key={event.id}>
@@ -343,17 +344,17 @@ export default function HomePage() {
                         </div>
                         <div className='flex min-w-3 flex-1 justify-between space-x-4 pt-1.5'>
                           <div>
-                            <p className='text-med text-gray-500'>
+                            <p className='text-med text-gray-300'>
                               {event.content}{' '}
                               <a
                                 href={event.href}
-                                className='font-bold text-gray-600'
+                                className='font-bold text-gray-200'
                               >
                                 {event.target}
                               </a>
                             </p>
                           </div>
-                          <div className='whitespace-nowrap text-right text- text-gray-500'>
+                          <div className='whitespace-nowrap text-right text- text-gray-300'>
                             <time dateTime={event.datetime}>{event.date}</time>
                           </div>
                         </div>

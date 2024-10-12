@@ -112,7 +112,7 @@ export default function Projects() {
                       {project.tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
-                          className='mx-1 my-1 inline-block rounded-full bg-indigo-500 px-3 py-1 text-xs font-semibold text-white shadow-md'
+                          className='mx-1 my-1 inline-block rounded-full bg-yellow-600 px-3 py-1 text-xs font-semibold text-white shadow-md'
                         >
                           {tag}
                         </span>
