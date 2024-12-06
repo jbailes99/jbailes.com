@@ -90,18 +90,18 @@ export default function Projects() {
           {people.map((project, index) => (
             <li
               key={index}
-              className='bg-gray-700 border-2 border-blue-500 rounded-tr-2xl rounded-tl-2xl flex flex-col gap-6 shadow-xl p-6 h-full'
+              className='bg-slate-100 border-2 border-slate-800 rounded-tr-2xl rounded-tl-2xl flex flex-col gap-6 shadow-xl p-6 h-full'
             >
               <div className='flex flex-col h-full'>
-                <h3 className='text-xl font-semibold text-center leading-8 tracking-tight text-gray-900'>
+                <h3 className='text-xl font-semibold text-center leading-8 tracking-tight text-gray-700'>
                   {project.name}
                 </h3>
-                <p className='text-xl font-bold text-center leading-7 text-gray-200'>
+                <p className='text-xl font-bold text-center leading-7 text-gray-700'>
                   {project.goal}
                 </p>
 
                 <div className='flex-grow overflow-auto'>
-                  <p className='mt-6 w-3/4 mx-auto text-start sm:text-md 3xl:text-lg 4xl:text-xl text-gray-100'>
+                  <p className='mt-6 w-3/4 mx-auto text-start sm:text-md 3xl:text-lg 4xl:text-xl text-gray-700'>
                     {project.bio}
                   </p>
                 </div>
@@ -112,7 +112,7 @@ export default function Projects() {
                       {project.tags.map((tag, tagIndex) => (
                         <span
                           key={tagIndex}
-                          className='mx-1 my-1 inline-block rounded-full bg-yellow-600 px-3 py-1 text-xs font-semibold text-white shadow-md'
+                          className='mx-1 my-1 inline-block rounded-full bg-indigo-600 px-3 py-1 text-xs font-semibold text-white shadow-sm '
                         >
                           {tag}
                         </span>
