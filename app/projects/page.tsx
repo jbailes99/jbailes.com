@@ -77,7 +77,21 @@ export default function Projects() {
       bio: 'A website for a professional League of Legends player to track his games and statistics on a single character. Includes a backend that utilizes RiotAPI.',
       tags: ['React', 'Express', 'AWS', 'TypeScript', 'Tailwind CSS'],
     },
-    // More projects...
+    {
+      name: (
+        <a
+          href='https://me.jbailes.com'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-blue-500 hover:text-orange-400'
+        >
+          me.jbailes.com
+        </a>
+      ),
+      goal: 'Frontend Portfolio',
+      bio: 'A portfolio site for IT Director.',
+      tags: ['React', 'JavaScript', 'Tailwind CSS'],
+    },
   ]
 
   return (
