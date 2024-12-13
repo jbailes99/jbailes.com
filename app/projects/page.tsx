@@ -99,12 +99,16 @@ export default function Projects() {
       <div className='max-w-full'>
         <ul
           role='list'
-          className='grid w-full mx-auto grid-cols-1 gap-6 sm:gap-6 lg:gap-6 xl:gap-6 3xl:gap-14 sm:grid-cols-2'
+          className='sm:grid space-y-4 sm:space-y-0 sm:mt-0 w-full mx-auto grid-cols-1 gap-6 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2'
         >
           {people.map((project, index) => (
             <li
               key={index}
-              className='bg-gray-100 border-2 border-slate-800 rounded-tr-2xl rounded-tl-2xl flex flex-col gap-6 shadow-xl p-6 h-full'
+              className={`bg-white hover:wiggle shadow-md   border-gray-400 rounded-xl flex flex-col gap- p-6 h-full ${
+                people.length % 2 !== 0 && index === people.length - 1
+                  ? 'sm:col-span-2 sm:mx-auto sm:w-1/2' // Ensures the last project spans full width
+                  : ''
+              }`}
             >
               <div className='flex flex-col h-full'>
                 <h3 className='text-xl font-semibold text-center leading-8 tracking-tight text-gray-700'>

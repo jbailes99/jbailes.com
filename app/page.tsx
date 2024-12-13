@@ -273,7 +273,7 @@ export default function HomePage() {
                 {features.map((feature) => (
                   <div
                     key={feature.name}
-                    className='relative bg-gray-100 border-2 border-slate-800 min-h-[320px] p-4 rounded-tr-2xl rounded-bl-2xl shadow-xl border-2 border-blue-500 flex flex-col items-center justify-between'
+                    className='relative bg-gray-200 min-h-[320px] p-4 rounded-tr-2xl rounded-bl-2xl shadow-lg flex flex-col items-center justify-between hover:wiggle'
                   >
                     {/* Icon and Title Block */}
                     <div className='w-full flex flex-col items-center'>
@@ -297,74 +297,74 @@ export default function HomePage() {
               </dl>
             </div>
           </div>
-          <div>
-            <div className='relative w-full mt-4'>
-              {' '}
-              <div
-                aria-hidden='true'
-                className='absolute inset-0 flex items-center'
-              >
-                <div className='w-3/4 mx-auto border-t border-gray-700' />{' '}
-              </div>
-              <div className='relative flex justify-center'>
-                <span className='bg-white px-6 sm:text-3xl text-2xl text-gray-700'>
-                  Recent Projects & Milestones
-                </span>
+          {/* Projects and Timeline */}
+          <div className='w-full flex flex-col px-4 bg-gray-100 mt-4 lg:flex '>
+            <div>
+              <div className='relative w-full '>
+                <div className='relative flex justify-center'>
+                  <span className='bg-white rounded-bl-2xl rounded-br-2xl px-6 py-1 sm:text-3xl text-2xl font-bold text-gray-700 text-center'>
+                    Recent Projects & Milestones
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-          {/* Projects and Timeline */}
-          <div className='w-full mx-auto mt-4 lg:flex '>
-            <Projects />
-            <div className='lg:w-1/3  justify-center flex flex-col sm:mr-12 mr-4 ml-4 items-center rounded-2xl mx-auto p-8'>
-              <h1 className='text-gray-700 text-2xl font-semibold mb-4'>
-                Recent Milestones
-              </h1>
-              <ul role='list' className='text-md mt-6 lg:text-lg'>
-                {timeline.map((event, eventIdx) => (
-                  <li key={event.id}>
-                    <div className='relative pb-5 lg:pb-12'>
-                      {eventIdx !== timeline.length - 1 ? (
-                        <span
-                          className='absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200'
-                          aria-hidden='true'
-                        />
-                      ) : null}
-                      <div className='relative flex space-x-12 leading-6'>
-                        <div>
-                          <span
-                            className={classNames(
-                              event.iconBackground,
-                              'h-9 w-9 rounded-full flex items-center justify-center ring-8 ring-white'
-                            )}
-                          >
-                            <event.icon
-                              className='h-5 w-5 text-white'
+            <div className='flex flex-col lg:flex-row'>
+              <Projects />
+              <div className='lg:w-1/3 justify-center flex flex-col sm:mr-12 mr-4 ml-4 items-center rounded-2xl mx-auto p-8'>
+                <h1 className='text-gray-700 text-2xl font-semibold mb-4'>
+                  Recent Milestones
+                </h1>
+                <ul role='list' className='text-md mt-6 lg:text-lg'>
+                  {timeline
+                    .slice()
+                    .reverse()
+                    .map((event, eventIdx) => (
+                      <li key={event.id}>
+                        <div className='relative pb-5 lg:pb-12'>
+                          {eventIdx !== timeline.length - 1 ? (
+                            <span
+                              className='absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200'
                               aria-hidden='true'
                             />
-                          </span>
-                        </div>
-                        <div className='flex min-w-3 flex-1 justify-between space-x-4 pt-1.5'>
-                          <div>
-                            <p className='text-med text-gray-700'>
-                              {event.content}{' '}
-                              <a
-                                href={event.href}
-                                className='font-bold text-gray-700'
+                          ) : null}
+                          <div className='relative flex space-x-12 leading-6'>
+                            <div>
+                              <span
+                                className={classNames(
+                                  event.iconBackground,
+                                  'h-9 w-9 rounded-full flex items-center justify-center ring-8 ring-white'
+                                )}
                               >
-                                {event.target}
-                              </a>
-                            </p>
-                          </div>
-                          <div className='whitespace-nowrap text-right text- text-gray-700'>
-                            <time dateTime={event.datetime}>{event.date}</time>
+                                <event.icon
+                                  className='h-5 w-5 text-white'
+                                  aria-hidden='true'
+                                />
+                              </span>
+                            </div>
+                            <div className='flex min-w-3 flex-1 justify-between space-x-4 pt-1.5'>
+                              <div>
+                                <p className='text-med text-gray-700'>
+                                  {event.content}{' '}
+                                  <a
+                                    href={event.href}
+                                    className='font-bold text-gray-700'
+                                  >
+                                    {event.target}
+                                  </a>
+                                </p>
+                              </div>
+                              <div className='whitespace-nowrap text-right text- text-gray-700'>
+                                <time dateTime={event.datetime}>
+                                  {event.date}
+                                </time>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+                      </li>
+                    ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
