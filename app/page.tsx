@@ -273,23 +273,23 @@ export default function HomePage() {
                 {features.map((feature) => (
                   <div
                     key={feature.name}
-                    className='relative bg-gray-700 min-h-[320px] p-4 rounded-tr-2xl rounded-bl-2xl shadow-xl border-2 border-blue-500 flex flex-col items-center justify-between'
+                    className='relative bg-gray-100 border-2 border-slate-800 min-h-[320px] p-4 rounded-tr-2xl rounded-bl-2xl shadow-xl border-2 border-blue-500 flex flex-col items-center justify-between'
                   >
                     {/* Icon and Title Block */}
                     <div className='w-full flex flex-col items-center'>
                       <div className='rounded-lg bg-gray-700 h-12 w-12 flex items-center justify-center'>
                         <feature.icon
-                          className='h-12 w-12 text-blue-500 '
+                          className='h-12 w-12 bg-blue-500 text-white rounded '
                           aria-hidden='true'
                         />
                       </div>
-                      <dt className='font-semibold mt-2 text-center text-3xl text-gray-200'>
+                      <dt className='font-semibold mt-2 text-center text-3xl text-gray-700'>
                         {feature.name}
                       </dt>
                     </div>
 
                     {/* Description Block */}
-                    <dd className='mt-4 text-center sm:text-md 3xl:text-md 4xl:text-lg my-auto mx-2 leading-7 text-gray-200'>
+                    <dd className='mt-4 text-center sm:text-md 3xl:text-md 4xl:text-lg my-auto mx-2 leading-7 text-gray-700'>
                       {feature.description}
                     </dd>
                   </div>
@@ -316,8 +316,10 @@ export default function HomePage() {
           {/* Projects and Timeline */}
           <div className='w-full mx-auto mt-4 lg:flex '>
             <Projects />
-            <div className='lg:w-1/3  justify-center flex flex-col bg-gray-700 border-2 border-blue-500 sm:mr-12 mr-4 ml-4 items-center rounded-2xl mx-auto p-8'>
-              <h1 className='text-gray-200 text-2xl font-bold'>Milestones</h1>
+            <div className='lg:w-1/3  justify-center flex flex-col sm:mr-12 mr-4 ml-4 items-center rounded-2xl mx-auto p-8'>
+              <h1 className='text-gray-700 text-2xl font-semibold mb-4'>
+                Recent Milestones
+              </h1>
               <ul role='list' className='text-md mt-6 lg:text-lg'>
                 {timeline.map((event, eventIdx) => (
                   <li key={event.id}>
@@ -344,17 +346,17 @@ export default function HomePage() {
                         </div>
                         <div className='flex min-w-3 flex-1 justify-between space-x-4 pt-1.5'>
                           <div>
-                            <p className='text-med text-gray-300'>
+                            <p className='text-med text-gray-700'>
                               {event.content}{' '}
                               <a
                                 href={event.href}
-                                className='font-bold text-gray-200'
+                                className='font-bold text-gray-700'
                               >
                                 {event.target}
                               </a>
                             </p>
                           </div>
-                          <div className='whitespace-nowrap text-right text- text-gray-300'>
+                          <div className='whitespace-nowrap text-right text- text-gray-700'>
                             <time dateTime={event.datetime}>{event.date}</time>
                           </div>
                         </div>
