@@ -65,7 +65,7 @@ export default function Projects() {
     {
       name: (
         <a
-          href='https://bestdraven.world'
+          href='https://bestvayne.lol'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400'
