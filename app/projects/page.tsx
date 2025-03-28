@@ -88,8 +88,8 @@ export default function Projects() {
           me.jbailes.com
         </a>
       ),
-      goal: 'Frontend Portfolio',
-      bio: 'A portfolio site for IT Director.',
+      goal: 'Frontend',
+      bio: 'IT Portfolio',
       tags: ['React', 'JavaScript', 'Tailwind CSS'],
     },
     {
