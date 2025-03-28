@@ -12,7 +12,7 @@ export default function Projects() {
         </a>
       ),
       goal: 'Frontend Portfolio ',
-      bio: ' I created a unique and nostalgic portfolio website that pays homage to the classic Windows 95 user interface. Inspired by the retro design elements of the 90s.',
+      bio: 'I created a unique and nostalgic portfolio website that pays homage to the classic Windows 95 user interface. Inspired by the retro design elements of the 90s.',
       tags: ['React95 lib', 'React', 'JavaScript'],
     },
     {
@@ -92,6 +92,21 @@ export default function Projects() {
       bio: 'A portfolio site for IT Director.',
       tags: ['React', 'JavaScript', 'Tailwind CSS'],
     },
+    {
+      name: (
+        <a
+          href='http://betweentwoplanetsfilm.com'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='text-blue-500 hover:text-orange-400'
+        >
+          Between Two Planets Film
+        </a>
+      ),
+      goal: 'Frontend',
+      bio: 'A website for an upcoming film - includes information on behind the scenes, artwork, contact, etc.',
+      tags: ['React', 'Next.js', 'Tailwind CSS'],
+    },
   ]
 
   return (
@@ -104,11 +119,7 @@ export default function Projects() {
           {people.map((project, index) => (
             <li
               key={index}
-              className={`bg-white hover:wiggle shadow-md   border-gray-400 rounded-xl flex flex-col gap- p-6 h-full ${
-                people.length % 2 !== 0 && index === people.length - 1
-                  ? 'sm:col-span-2 sm:mx-auto sm:w-1/2' // Ensures the last project spans full width
-                  : ''
-              }`}
+              className={`bg-white hover:wiggle shadow-md border-gray-400 rounded-xl flex flex-col gap-6 p-6 h-full min-h-[320px]`} // Ensure minimum height
             >
               <div className='flex flex-col h-full'>
                 <h3 className='text-xl font-semibold text-center leading-8 tracking-tight text-gray-700'>
@@ -119,10 +130,11 @@ export default function Projects() {
                 </p>
 
                 <div className='flex-grow overflow-auto'>
-                  <p className='mt-6 w-3/4 mx-auto text-start sm:text-md 3xl:text-lg 4xl:text-xl text-gray-700'>
+                  <p className='mt-6 w-5/6 mx-auto text-center sm:text-md 3xl:text-lg 4xl:text-xl text-gray-700'>
                     {project.bio}
                   </p>
                 </div>
+
                 {project.tags &&
                   Array.isArray(project.tags) &&
                   project.tags.length > 0 && (
