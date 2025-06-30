@@ -3,7 +3,7 @@ export default function Projects() {
     {
       name: (
         <a
-          href='https://www.naashka.com'
+          href='https://jbailes99.github.io/naashka/'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400 '
