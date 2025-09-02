@@ -114,16 +114,39 @@ const timeline = [
 const features = [
   {
     name: 'Education',
-    description:
-      'Throughout my journey in education, I have learned a great deal about teamwork and collaboration, especially in the software engineering field. I have a Bachelors degree in Computer Science concentrating in Networking and Cloud Computing with a minor in Mathematics from Salem State University.  ',
+    description: (
+      <>
+        I earned my <strong>Bachelor&apos;s in Computer Science</strong> with a
+        focus on
+        <strong> Networking & Cloud Computing</strong> and a minor in
+        Mathematics from Salem State University. Along the way, I picked up
+        solid teamwork and collaboration skills, especially through hands-on
+        software engineering projects, and developed a real passion for building
+        scalable, cloud-powered systems.
+      </>
+    ),
     icon: AcademicCapIcon,
   },
   {
     name: 'Experience',
-    description:
-      'Across various projects, I have gained experience in agile development, organizing weekly sprints, meetings, and prioritzing tasks based on user priority. This has also given me professional experience with creating comprehensive documentation on system requirements, user requirements, use case diagrams, and more to communicate effectively with stakeholders. ',
+    description: (
+      <>
+        <p>
+          I’ve worked on agile projects, organizing sprints, running meetings,
+          and creating documentation to communicate clearly with stakeholders.
+        </p>
+
+        <p className='mt-4'>
+          Beyond development, I bring hands-on IT experience supporting
+          multi-site school environments — managing networks, devices, and
+          enterprise IT platforms to keep systems reliable and operations
+          smooth.
+        </p>
+      </>
+    ),
     icon: PaperAirplaneIcon,
   },
+
   // {
   //   name: 'Portfolio',
   //   description: (
@@ -151,13 +174,58 @@ const features = [
   {
     name: 'Skills',
     description: (
-      <>
-        Proficient in programming languages like JavaScript, Python and Java.
-        Familiar with MERN Stack applications and cloud-native apps utilizing
-        AWS. Skilled in data analysis and visualization with tools such as
-        Pandas, NumPy, and Matplotlib. Familiar with machine learning libraries
-        like TensorFlow and Scikit-Learn.
-      </>
+      <div className='flex flex-wrap justify-center gap-2 mt-2'>
+        {/* Front-end & Full-stack / Cloud Development */}
+        <span className='px-3 py-1 bg-indigo-700 text-white rounded-full text-sm font-medium'>
+          JavaScript / Python / Java
+        </span>
+        <span className='px-3 py-1 bg-indigo-700 text-white rounded-full text-sm font-medium'>
+          React
+        </span>
+        <span className='px-3 py-1 bg-indigo-700 text-white rounded-full text-sm font-medium'>
+          Next.js
+        </span>
+        <span className='px-3 py-1 bg-indigo-700 text-white rounded-full text-sm font-medium'>
+          Tailwind / Bootstrap
+        </span>
+        <span className='px-3 py-1 bg-indigo-700 text-white rounded-full text-sm font-medium'>
+          Full-stack & Cloud Development
+        </span>
+        <span className='px-3 py-1 bg-indigo-700 text-white rounded-full text-sm font-medium'>
+          Databases (MongoDB, PostgreSQL)
+        </span>
+
+        {/* Data & Machine Learning */}
+        <span className='px-3 py-1 bg-green-700 text-white rounded-full text-sm font-medium'>
+          Pandas
+        </span>
+        <span className='px-3 py-1 bg-green-700 text-white rounded-full text-sm font-medium'>
+          NumPy
+        </span>
+        <span className='px-3 py-1 bg-green-700 text-white rounded-full text-sm font-medium'>
+          Matplotlib
+        </span>
+        <span className='px-3 py-1 bg-green-700 text-white rounded-full text-sm font-medium'>
+          TensorFlow
+        </span>
+        <span className='px-3 py-1 bg-green-700 text-white rounded-full text-sm font-medium'>
+          Scikit-Learn
+        </span>
+
+        {/* IT & Systems */}
+        <span className='px-3 py-1 bg-orange-700 text-white rounded-full text-sm font-medium'>
+          System Administration
+        </span>
+        <span className='px-3 py-1 bg-orange-700 text-white rounded-full text-sm font-medium'>
+          Device Management
+        </span>
+        <span className='px-3 py-1 bg-orange-700 text-white rounded-full text-sm font-medium'>
+          Network Troubleshooting
+        </span>
+        <span className='px-3 py-1 bg-orange-700 text-white rounded-full text-sm font-medium'>
+          Enterprise IT Platforms
+        </span>
+      </div>
     ),
     icon: CodeBracketSquareIcon,
   },

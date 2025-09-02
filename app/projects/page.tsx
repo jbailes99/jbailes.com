@@ -3,7 +3,7 @@ export default function Projects() {
     {
       name: (
         <a
-          href='https://jbailes99.github.io/naashka/'
+          href='https://naashka.com'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400 '
@@ -12,7 +12,7 @@ export default function Projects() {
         </a>
       ),
       goal: 'Frontend Portfolio ',
-      bio: 'I created a unique and nostalgic portfolio website that pays homage to the classic Windows 95 user interface. Inspired by the retro design elements of the 90s.',
+      bio: 'A unique and nostalgic portfolio website that pays homage to the classic Windows 95 user interface. Inspired by the retro design elements of the 90s.',
       tags: ['React95 lib', 'React', 'JavaScript'],
     },
     {
@@ -65,7 +65,7 @@ export default function Projects() {
     {
       name: (
         <a
-          href='https://bestvayne.lol'
+          href='https://bestdraven.world/'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400'
