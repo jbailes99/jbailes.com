@@ -65,7 +65,7 @@ export default function Projects() {
     {
       name: (
         <a
-          href='https://bestdraven.world/'
+          href='https://bestvayne.com'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400'
@@ -74,7 +74,7 @@ export default function Projects() {
         </a>
       ),
       goal: 'Web Application',
-      bio: 'A website for a professional League of Legends player to track his games and statistics on a single character. Includes a backend that utilizes RiotAPI.',
+      bio: 'A website for a player to track games and statistics. Includes a backend that utilizes RiotAPI.',
       tags: ['React', 'Express', 'AWS', 'TypeScript', 'Tailwind CSS'],
     },
     {
