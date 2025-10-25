@@ -74,7 +74,7 @@ export default function Projects() {
         </a>
       ),
       goal: 'Web Application',
-      bio: 'A website for a player to track games and statistics. Includes a backend that utilizes RiotAPI.',
+      bio: 'Lightweight application to track games and statistics. Includes a backend that utilizes RiotAPI.',
       tags: ['React', 'Express', 'AWS', 'TypeScript', 'Tailwind CSS'],
     },
     {
@@ -104,7 +104,7 @@ export default function Projects() {
         </a>
       ),
       goal: 'Frontend',
-      bio: 'A website for an upcoming film - includes information on behind the scenes, artwork, contact, etc.',
+      bio: 'Frontend work for an upcoming film - includes information on behind the scenes, artwork, contact, etc.',
       tags: ['React', 'Next.js', 'Tailwind CSS'],
     },
   ]

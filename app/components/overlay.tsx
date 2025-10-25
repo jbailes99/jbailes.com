@@ -12,7 +12,7 @@ const LoadingOverlay = () => {
     const timer = setTimeout(() => {
       setFadeOut(true) // Trigger fade-out
       setTimeout(() => setLoading(false), 500) // Hide the overlay after fade-out
-    }, 2000)
+    }, 800)
 
     return () => clearTimeout(timer) // Cleanup on component unmount
   }, [])

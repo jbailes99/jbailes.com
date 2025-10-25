@@ -35,7 +35,7 @@
   stroke-dasharray: 3417.884521484375px;
   stroke: white;
   stroke-dashoffset: 3417.884521484375px;
-  animation: LineAnimation 2s ease forwards; /* Corrected here */
+  animation: LineAnimation 1s ease forwards; /* Corrected here */
 }
 
 @keyframes LineAnimation {
