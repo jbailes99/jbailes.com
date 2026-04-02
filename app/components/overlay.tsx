@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import LineSVG from './signature' // Adjust the import path according to your folder structure
-import '../styles.css' // Import the CSS file for styles
+import '../styles.css'
 
 const LoadingOverlay = () => {
   const [loading, setLoading] = useState(true)
