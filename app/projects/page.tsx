@@ -3,7 +3,7 @@ export default function Projects() {
     {
       name: (
         <a
-          href='https://portfolio.naashka.com'
+          href='https://project.jbailes.com'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-500 hover:text-orange-400 '
