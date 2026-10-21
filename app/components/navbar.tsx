@@ -1,97 +1,187 @@
 'use client'
 
-import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import cn from 'classnames'
-import { Fragment } from 'react'
-import LineSVG from './signature' // Adjust the import path according to your folder structure
+import { useEffect, useLayoutEffect, useState } from 'react'
+import { profile } from '../lib/content'
 
-const navigationItems = [
-  {
-    key: 'home',
-    name: 'Home',
-    href: '/',
-  },
-  {
-    name: 'My Resume',
-    href: '/Resume.pdf', // Update this to the path of your PDF
-    target: '_blank', // Open in a new tab
-    download: true, // This attribute suggests that the link is for downloading
-  },
+const links = [
+  { href: '/#home', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
 ]
+
+const NAME = 'jacob bailes'
+
+function applyTheme(theme: 'light' | 'dark') {
+  const root = document.documentElement
+  root.dataset.theme = theme
+  root.style.colorScheme = theme
+  localStorage.setItem('theme', theme)
+  const meta = document.querySelector('meta[name="theme-color"]')
+  if (meta)
+    meta.setAttribute('content', theme === 'light' ? '#f6f3ea' : '#07080a')
+}
 
 export default function Navbar() {
   const pathname = usePathname()
-  const currentPage = React.useMemo(
-    () =>
-      navigationItems.find((item) => item.href.startsWith(pathname))?.key ??
-      'home',
-    [pathname]
-  )
+  const [open, setOpen] = useState(false)
+  const [typed, setTyped] = useState(0)
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+
+  useEffect(() => {
+    setOpen(false)
+  }, [pathname])
+
+  useLayoutEffect(() => {
+    const current =
+      document.documentElement.dataset.theme === 'light' ? 'light' : 'dark'
+    setTheme(current)
+  }, [])
+
+  useEffect(() => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (reduce) {
+      setTyped(NAME.length)
+      return
+    }
+    setTyped(0)
+    let count = 0
+    const timer = window.setInterval(() => {
+      count += 1
+      setTyped(count)
+      if (count >= NAME.length) window.clearInterval(timer)
+    }, 62)
+    return () => window.clearInterval(timer)
+  }, [])
+
+  function toggleTheme() {
+    const current =
+      document.documentElement.dataset.theme === 'light' ? 'light' : 'dark'
+    const next = current === 'light' ? 'dark' : 'light'
+    applyTheme(next)
+    setTheme(next)
+  }
 
   return (
-    <Disclosure as='nav' className='bg-gray-800'>
-      {({ open }) => (
-        <>
-          <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
-            <div className='relative flex h-16 items-center justify-between'>
-              <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
-                <div className='flex flex-shrink-0 items-center'>
-                  <LineSVG />
-                </div>
-              </div>
-              <div className='flex items-center justify-center sm:items-stretch sm:justify-start'>
-                <div className='sm:ml-10 sm:block'>
-                  <div className='flex space-x-1 sm:space-x-10'>
-                    {navigationItems.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className={cn(
-                          item.key === currentPage
-                            ? 'bg-gray-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={
-                          item.key === currentPage ? 'page' : undefined
-                        }
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <Disclosure.Panel className='sm:hidden'>
-            <div className='space-y-1 px-2 pb-3 pt-2'>
-              {navigationItems.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as='a'
-                  href={item.href}
-                  className={cn(
-                    item.key === currentPage // Corrected this line
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.key === currentPage ? 'page' : undefined}
+    <header className='sticky top-0 z-40 border-b border-line/80 bg-ink/80 backdrop-blur-md'>
+      <div className='mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 sm:px-8'>
+        <Link
+          href='/'
+          aria-label='Jacob Bailes'
+          className='inline-flex min-w-[14ch] items-center font-mono text-sm tracking-tight text-paper'
+        >
+          <span aria-hidden='true'>
+            {NAME.slice(0, typed)}
+            <span className='cursor-blink text-lime'>_</span>
+          </span>
+        </Link>
+        <div className='flex items-center gap-5 sm:gap-7'>
+          <nav
+            className='hidden items-center gap-7 sm:flex'
+            aria-label='Primary'
+          >
+            {links.map((link) => {
+              const active = pathname === link.href
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={`font-mono text-sm ${active ? 'text-lime' : 'text-mute hover:text-paper'}`}
+                  aria-current={active ? 'page' : undefined}
                 >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </>
+                  {link.label}
+                </Link>
+              )
+            })}
+            <a
+              href={profile.resume}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='font-mono text-sm text-mute hover:text-paper'
+            >
+              Resume
+            </a>
+          </nav>
+          <button
+            type='button'
+            onClick={toggleTheme}
+            aria-label={
+              theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'
+            }
+            className='p-2 text-mute hover:text-lime'
+          >
+            {theme === 'light' ? <MoonIcon /> : <SunIcon />}
+          </button>
+          <button
+            type='button'
+            className='font-mono text-sm text-mist sm:hidden'
+            aria-expanded={open}
+            aria-controls='mobile-nav'
+            onClick={() => setOpen((value) => !value)}
+          >
+            {open ? 'close' : 'menu'}
+          </button>
+        </div>
+      </div>
+      {open && (
+        <nav
+          id='mobile-nav'
+          className='border-t border-line px-5 py-4 sm:hidden'
+          aria-label='Mobile'
+        >
+          <div className='flex flex-col gap-3'>
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className='font-mono text-sm text-paper'
+              >
+                {link.label}
+              </Link>
+            ))}
+            <a
+              href={profile.resume}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='font-mono text-sm text-paper'
+            >
+              Resume
+            </a>
+          </div>
+        </nav>
       )}
-    </Disclosure>
+    </header>
+  )
+}
+
+function SunIcon() {
+  return (
+    <svg
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      className='h-[18px] w-[18px]'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='1.75'
+    >
+      <circle cx='12' cy='12' r='4' />
+      <path d='M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4' />
+    </svg>
+  )
+}
+
+function MoonIcon() {
+  return (
+    <svg
+      viewBox='0 0 24 24'
+      aria-hidden='true'
+      className='h-[18px] w-[18px]'
+      fill='none'
+      stroke='currentColor'
+      strokeWidth='1.75'
+    >
+      <path d='M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5Z' />
+    </svg>
   )
 }
