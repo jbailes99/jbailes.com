@@ -19,7 +19,7 @@ export default function AboutPage() {
           </h1>
           <div className='mt-12 max-w-2xl space-y-5 text-lg leading-relaxed text-mist'>
             <p>
-              I'm an IT specialist with a B.S. in Computer Science from Salem
+              I&apos;m an IT specialist with a B.S. in Computer Science from Salem
               State University and a minor in mathematics. I work in school IT,
               handling everything from troubleshooting computers and managing
               devices to keeping school systems, phones, and AV equipment
@@ -27,14 +27,14 @@ export default function AboutPage() {
             </p>
             <p>
               Outside of that, I build web apps and write scripts to solve
-              problems or make things work a little better. I've always liked
-              figuring out how things work, whether that's restoring old
+              problems or make things work a little better. I&apos;ve always liked
+              figuring out how things work, whether that&apos;s restoring old
               consoles, building computers, or messing around with ESP32 boards,
               cameras, and sensors. I also enjoy 3D printing.
             </p>
             <p>
               Most of what I do comes down to figuring things out, trying
-              things, and fixing what doesn't work.
+              things, and fixing what doesn&apos;t work.
             </p>
             <p>
               If you have a project in mind or need a hand with something,{' '}
