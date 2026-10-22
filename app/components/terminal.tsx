@@ -236,9 +236,7 @@ function NeofetchCard() {
     ['role', profile.role.toLowerCase()],
     ['degree', 'b.s. computer science'],
     ['minor', 'mathematics'],
-    ['uptime', '5 years'],
-    ['systems', 'ad · jamf · aws'],
-    ['status', 'available'],
+    ['status', 'online'],
   ]
   return (
     <div className='grid items-center gap-5 py-1 sm:grid-cols-[9.5rem_1fr]'>

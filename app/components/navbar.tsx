@@ -73,7 +73,7 @@ export default function Navbar() {
         >
           <span aria-hidden='true'>
             {NAME.slice(0, typed)}
-            <span className='cursor-blink text-lime'>_</span>
+            {typed < NAME.length && <span className='cursor-blink text-lime'>_</span>}
           </span>
         </Link>
         <div className='flex items-center gap-5 sm:gap-7'>
