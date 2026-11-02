@@ -49,7 +49,7 @@ export default function HomePage() {
               I also enjoy exploring technology outside of work, particularly
               through hands-on projects involving embedded electronics, ESP32
               development, sensors, cameras, 3D printing, and console repairs!
-              I’m always interested in learning how things work and finding
+              I&apos;m always interested in learning how things work and finding
               opportunities to build something of my own.{' '}
               <Link
                 href='/about'

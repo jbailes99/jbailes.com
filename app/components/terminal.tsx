@@ -36,6 +36,7 @@ type Mode = 'shell' | 'snake' | 'debug'
 const COMMANDS = [
   'help',
   'whoami',
+  'about',
   'neofetch',
   'skills',
   'projects',
@@ -55,11 +56,11 @@ const COMMANDS = [
 const BOOT: Out[] = [
   { kind: 'text', text: 'jbailes kernel 5.0.0', tone: 'dim' },
   { kind: 'text', text: 'mounting /home/jacob ............ ok', tone: 'dim' },
-  { kind: 'text', text: 'loading accounts and devices .... ok', tone: 'dim' },
+  { kind: 'text', text: 'loading campus systems .......... ok', tone: 'dim' },
   { kind: 'gap' },
   { kind: 'neofetch' },
   { kind: 'gap' },
-  { kind: 'text', text: 'shell is live. try help, projects, or play.', tone: 'dim' },
+  { kind: 'text', text: 'shell is live. try whoami, projects, or play.', tone: 'dim' },
 ]
 
 function columnate(rows: [string, string][]): string[] {
@@ -75,7 +76,7 @@ function respond(command: string, arg: string): Out[] {
       return [
         ...columnate([
           ['help', 'show this'],
-          ['whoami', 'short bio'],
+          ['whoami', 'about me / short bio'],
           ['neofetch', 'machine readout'],
           ['skills', 'tools I use'],
           ['projects', 'apps I have built'],
@@ -102,6 +103,8 @@ function respond(command: string, arg: string): Out[] {
         { kind: 'text', text: bioLines[2], tone: 'dim' },
         { kind: 'gap' },
         { kind: 'text', text: bioLines[3], tone: 'dim' },
+        { kind: 'gap' },
+        { kind: 'text', text: 'more on /about', tone: 'dim' },
       ]
     case 'neofetch':
       return [{ kind: 'neofetch' }]
@@ -192,7 +195,7 @@ function respond(command: string, arg: string): Out[] {
       return [{ kind: 'text', text: '/home/jacob' }]
     case 'sudo':
       if (arg.includes('sandwich')) {
-        return [{ kind: 'text', text: 'make it yourself. I will do the software.', tone: 'warn' }]
+        return [{ kind: 'text', text: 'make it yourself. I figure it out, and fix it.', tone: 'warn' }]
       }
       if (arg.includes('hire')) {
         return [
@@ -234,6 +237,7 @@ function NeofetchCard() {
     ['user', 'jacob'],
     ['host', 'jbailes.com'],
     ['role', profile.role.toLowerCase()],
+    ['focus', 'educational it'],
     ['degree', 'b.s. computer science'],
     ['minor', 'mathematics'],
     ['status', 'online'],

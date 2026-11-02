@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Jacob Bailes',
-  role: 'software engineer, it specialist',
+  role: 'it specialist, software engineer',
   email: 'contact@jbailes.com',
   phone: '+1 (781) 513-1582',
   phoneHref: 'tel:+17815131582',
@@ -12,13 +12,13 @@ export const profile = {
 }
 
 export const intro =
-  'I work in IT support and software development, from troubleshooting everyday technical issues to building applications for specific needs.'
+  'I work in educational IT and build apps when the tools already in place do not cover the job. Most of what I do comes down to figure it out, and fix it.'
 
 export const bioLines = [
-  'I support school and office systems: accounts, devices, phones, school platforms, and the building systems around them.',
-  'I also build web apps when the tools already in place do not cover the job.',
-  'Five years of this work. B.S. Computer Science from Salem State, with a minor in mathematics.',
-  'Off hours: ESP32 boards, sensors, cameras, and a 3D printer. Make a thing, see if it works, fix it until it does.',
+  'IT specialist in educational IT — supporting about 1500 staff and students across four schools, where no two days are quite the same.',
+  'Problem solving is what draws me to technology: dig into an issue, find the root cause, and fix it. Same energy when building an app.',
+  'B.S. Computer Science from Salem State University, with a minor in mathematics.',
+  'Off hours: restoring consoles, building computers, Arduino and ESP32, cameras, sensors, home automation, and 3D printing. Figure it out, and fix it.',
 ]
 
 export type ProjectTone = 'lime' | 'sky' | 'violet' | 'amber' | 'teal' | 'rose'
