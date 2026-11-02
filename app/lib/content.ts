@@ -12,7 +12,7 @@ export const profile = {
 }
 
 export const intro =
-  'I work in educational IT and build apps when the tools already in place do not cover the job. Most of what I do comes down to figure it out, and fix it.'
+  'Computer science graduate working across IT, software development, and hands-on technology projects.'
 
 export const bioLines = [
   'IT specialist in educational IT — supporting about 1500 staff and students across four schools, where no two days are quite the same.',
