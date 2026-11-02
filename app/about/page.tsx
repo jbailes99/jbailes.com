@@ -42,7 +42,10 @@ export default function AboutPage() {
               and experimenting with cameras, sensors, home automation, and 3D
               printing.
             </p>
-            <p>Most of what I do comes down to "figure it out, and fix it".</p>
+            <p>
+              Most of what I do comes down to &quot;figure it out, and fix
+              it&quot;.
+            </p>
             <p>
               If you have a project in mind or need a hand with something,{' '}
               <Link
