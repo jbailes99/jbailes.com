@@ -19,23 +19,29 @@ export default function AboutPage() {
           </h1>
           <div className='mt-12 max-w-2xl space-y-5 text-lg leading-relaxed text-mist'>
             <p>
-              I&apos;m an IT specialist with a B.S. in Computer Science from Salem
-              State University and a minor in mathematics. I work in school IT,
-              handling everything from troubleshooting computers and managing
-              devices to keeping school systems, phones, and AV equipment
-              running.
+              I&apos;m an IT specialist with a B.S. in Computer Science from
+              Salem State University and a minor in mathematics. I work in
+              educational IT, supporting 1500 staff/students across four
+              schools, where no two days are quite the same. I enjoy the
+              challenges that come with working in such a fast-paced
+              environment. Problem solving has always been what draws me to
+              technology. I enjoy diving into an issue, understanding what's
+              happening beneath the surface, and working through it until I have
+              a solution. That interest is what led me to study Computer
+              Sicence, and it's something I carry into everything I do in my
+              everyday life. There's something truly satisfying about
+              methodically breaking down issues and findign the root cause, and
+              finally fixing it. It's that same feeling when you build an app,
+              fix a bug, or a hardware issue. I'm always chasing that same
+              feeling of accomplishment and learning something.
             </p>
             <p>
-              Outside of that, I build web apps and write scripts to solve
-              problems or make things work a little better. I&apos;ve always liked
-              figuring out how things work, whether that&apos;s restoring old
-              consoles, building computers, or messing around with ESP32 boards,
-              cameras, and sensors. I also enjoy 3D printing.
+              Aside from work, I enjoy restoring and repairing old consoles,
+              building computers, or tinkering with Arduino and ESP32 projects,
+              and experimenting with cameras, sensors, home automation, and 3D
+              printing.
             </p>
-            <p>
-              Most of what I do comes down to figuring things out, trying
-              things, and fixing what doesn&apos;t work.
-            </p>
+            <p>Most of what I do comes down to "figure it out, and fix it".</p>
             <p>
               If you have a project in mind or need a hand with something,{' '}
               <Link

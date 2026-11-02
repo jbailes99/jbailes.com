@@ -39,15 +39,18 @@ export default function HomePage() {
           </h2>
           <div className='mt-6 space-y-4 text-base leading-relaxed text-mist'>
             <p>
-              For the past few years, I’ve worked in IT support, helping people
-              keep their devices, accounts, phones, and networks running.
-              There’s more to the job than troubleshooting, too. I help
-              coordinate projects, work with staff on technology needs, and
-              document things so the next person isn’t starting from scratch.
+              I work in IT support, helping maintain and manage the technology
+              systems people rely on every day. My work spans endpoint
+              management, account administration, networking, infrastructure,
+              and troubleshooting, along with coordinating technology projects
+              and working with staff to address their needs.
             </p>
             <p>
-              Outside of work, I enjoy tinkering with electronics, from ESP32
-              boards and sensors to cameras and 3D printing.{' '}
+              I also enjoy exploring technology outside of work, particularly
+              through hands-on projects involving embedded electronics, ESP32
+              development, sensors, cameras, 3D printing, and console repairs!
+              I’m always interested in learning how things work and finding
+              opportunities to build something of my own.{' '}
               <Link
                 href='/about'
                 className='text-paper underline decoration-lime/50 underline-offset-4 hover:text-lime'
